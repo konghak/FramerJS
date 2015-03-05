@@ -1,24 +1,35 @@
-# Welcome to Framer
+Framer.Device.deviceType = "iphone-6-spacegray"
 
-# Learn how to prototype: http://framerjs.com/learn
-# Drop an image on the device, or import a design from Sketch or Photoshop
-
-iconLayer = new Layer width:256, height:256, image:"images/framer-icon.png"
-iconLayer.center()
-
-# Define a set of states with names (the original state is 'default')
-iconLayer.states.add
-	second: {y:100, scale:0.6, rotationZ:100}
-	third:  {y:300, scale:1.3, blur:4}
-	fourth: {y:200, scale:0.9, blur:2, rotationZ:200}
-
-# Set the default animation options
-iconLayer.states.animationOptions =
-	curve: "spring(500,12,0)"
-
-# On a click, go to the next state
-iconLayer.on Events.Click, ->
-	iconLayer.states.next()
+bg = new BackgroundLayer
+	backgroundColor:"#28AFFA"
+	
+layerA = new Layer
+	backgroundColor : "#fff"
+	width : 200, height : 200
+	
+layerB = new Layer
+	backgroundColor : "#fff"
+	width : 200, height : 200, borderRadius : layerA.width/2
 	
 	
+layerA.center()
+layerB.center()
+
+layerA.y -= 520
+layerA.x -= 120
+layerB.x += 120
+	
+
+layerA.animate
+	properties :
+		rotation : 90
+		borderRadius : 15
+		y : screen.height - 400
+	time : 0.5
+	curve : "spring"
+		
+layerB.animate
+	properties :
+		rotation : 90
+		borderRadius : 15
 	
