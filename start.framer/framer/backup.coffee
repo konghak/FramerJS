@@ -11,7 +11,6 @@ layerB = new Layer
 	backgroundColor : "#fff"
 	width : 200, height : 200, borderRadius : layerA.width/2
 	
-	
 layerA.center()
 layerB.center()
 
