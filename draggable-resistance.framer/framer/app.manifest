@@ -1,10 +1,11 @@
 CACHE MANIFEST
-# 1425957828.551517
+# 1425960407.314460
 CACHE:
 /_server/server.js
 ../.temp.html
 ../app.coffee
 ../framer/.bowerrc
+../framer/app.manifest
 ../framer/backup.coffee
 ../framer/coffee-script.js
 ../framer/config.json
