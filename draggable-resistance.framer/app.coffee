@@ -21,8 +21,11 @@ layerA.draggable.speedX = 0.2
 layerA.draggable.speedY = 2
 
 layerA.on Events.DragEnd, ->
+	print layerA.draggable.calculateVelocity()
 	layerA.animate
 		properties : 
 			x : originX
 			y : originY
 		curve : "spring(300,18,10)"
+		
+
