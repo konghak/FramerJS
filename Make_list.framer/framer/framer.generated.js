@@ -10,7 +10,7 @@ window.Framer.Defaults.DeviceView = {
 
 window.FramerStudioInfo = {
   "deviceImagesUrl" : "file:\/\/\/Applications\/Framer%20Studio.app\/Contents\/Resources\/DeviceImages\/",
-  "documentTitle" : "animationtiming.framer"
+  "documentTitle" : "Make_list.framer"
 };
 
 Framer.Device = new Framer.DeviceView();
