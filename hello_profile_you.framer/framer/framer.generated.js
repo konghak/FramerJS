@@ -9,6 +9,110 @@ window.__imported__["profile_you/layers.json.js"] = [
     "visible" : true,
     "children" : [
       {
+        "maskFrame" : {
+          "y" : 380,
+          "x" : -25,
+          "width" : 770,
+          "height" : 520
+        },
+        "id" : "EC690C60-A27E-44B7-91D4-038D10A43AE0",
+        "visible" : false,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Rectangle_772__Rectangle_773-EC690C60-A27E-44B7-91D4-038D10A43AE0.png",
+          "frame" : {
+            "y" : 380,
+            "x" : -25,
+            "width" : 770,
+            "height" : 520
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 380,
+          "x" : -25,
+          "width" : 770,
+          "height" : 520
+        },
+        "name" : "Rectangle_772__Rectangle_773"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "C3B78008-B763-4888-A064-01864CA6E208",
+        "visible" : true,
+        "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "3D1F06F1-9DAC-499F-B6EB-EE63E503C00F",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/프로필_편집-3D1F06F1-9DAC-499F-B6EB-EE63E503C00F.png",
+              "frame" : {
+                "y" : 116,
+                "x" : 510,
+                "width" : 131,
+                "height" : 174
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 116,
+              "x" : 510,
+              "width" : 131,
+              "height" : 174
+            },
+            "name" : "프로필_편집"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "01243989-5C26-42A7-83A8-8275DBE9F612",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/menu_bg-01243989-5C26-42A7-83A8-8275DBE9F612.png",
+              "frame" : {
+                "y" : 72,
+                "x" : 470,
+                "width" : 220,
+                "height" : 260
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 72,
+              "x" : 470,
+              "width" : 220,
+              "height" : 260
+            },
+            "name" : "menu_bg"
+          }
+        ],
+        "image" : {
+          "path" : "images\/menu-C3B78008-B763-4888-A064-01864CA6E208.png",
+          "frame" : {
+            "y" : 72,
+            "x" : 470,
+            "width" : 220,
+            "height" : 260
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 72,
+          "x" : 470,
+          "width" : 220,
+          "height" : 260
+        },
+        "name" : "menu"
+      },
+      {
         "maskFrame" : null,
         "id" : "D333EA56-FA32-4E4D-B51E-449D9A82201F",
         "visible" : true,
@@ -258,23 +362,97 @@ window.__imported__["profile_you/layers.json.js"] = [
               "height" : 82
             },
             "name" : "buttom"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "1B226909-9485-4396-950A-717D06B1C3BF",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/btn_close-1B226909-9485-4396-950A-717D06B1C3BF.png",
+              "frame" : {
+                "y" : 90,
+                "x" : 44,
+                "width" : 30,
+                "height" : 30
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 90,
+              "x" : 44,
+              "width" : 30,
+              "height" : 30
+            },
+            "name" : "btn_close"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "CF9F283C-4C8B-47CB-BE5B-B42FC48E622A",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "31ABE83A-FC64-4A0F-AC7F-7777B2BB0F7B",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/btn_area-31ABE83A-FC64-4A0F-AC7F-7777B2BB0F7B.png",
+                  "frame" : {
+                    "y" : 73,
+                    "x" : 642,
+                    "width" : 60,
+                    "height" : 60
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 73,
+                  "x" : 642,
+                  "width" : 60,
+                  "height" : 60
+                },
+                "name" : "btn_area"
+              }
+            ],
+            "image" : {
+              "path" : "images\/btn_menu-CF9F283C-4C8B-47CB-BE5B-B42FC48E622A.png",
+              "frame" : {
+                "y" : 73,
+                "x" : 642,
+                "width" : 60,
+                "height" : 60
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 73,
+              "x" : 642,
+              "width" : 60,
+              "height" : 60
+            },
+            "name" : "btn_menu"
           }
         ],
         "image" : {
           "path" : "images\/profile_top-687A544C-E959-46FF-83D0-1F5E961729B3.png",
           "frame" : {
-            "y" : 87,
+            "y" : 73,
             "x" : 41,
-            "width" : 635,
-            "height" : 536
+            "width" : 661,
+            "height" : 550
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 87,
+          "y" : 73,
           "x" : 41,
-          "width" : 635,
-          "height" : 536
+          "width" : 661,
+          "height" : 550
         },
         "name" : "profile_top"
       },

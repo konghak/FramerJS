@@ -20,7 +20,7 @@ window.__imported__["import_test/layers.json.js"] = [
             "image" : {
               "path" : "images\/green-31A55FC4-7524-4812-A560-59DEE59BE320.png",
               "frame" : {
-                "y" : 913,
+                "y" : 1167,
                 "x" : 346,
                 "width" : 192,
                 "height" : 192
@@ -28,7 +28,7 @@ window.__imported__["import_test/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 913,
+              "y" : 1167,
               "x" : 346,
               "width" : 192,
               "height" : 192
@@ -45,7 +45,7 @@ window.__imported__["import_test/layers.json.js"] = [
             "image" : {
               "path" : "images\/orange-D6C464E8-ADB0-4A2D-91BD-E17E70219419.png",
               "frame" : {
-                "y" : 913,
+                "y" : 1167,
                 "x" : 118,
                 "width" : 192,
                 "height" : 192
@@ -53,7 +53,7 @@ window.__imported__["import_test/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 913,
+              "y" : 1167,
               "x" : 118,
               "width" : 192,
               "height" : 192
@@ -64,7 +64,7 @@ window.__imported__["import_test/layers.json.js"] = [
         "image" : {
           "path" : "images\/groupB-3FB57088-4714-45F9-971F-E662589EB80C.png",
           "frame" : {
-            "y" : 913,
+            "y" : 1167,
             "x" : 118,
             "width" : 420,
             "height" : 192
@@ -72,7 +72,7 @@ window.__imported__["import_test/layers.json.js"] = [
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 913,
+          "y" : 1167,
           "x" : 118,
           "width" : 420,
           "height" : 192
@@ -94,7 +94,7 @@ window.__imported__["import_test/layers.json.js"] = [
             "image" : {
               "path" : "images\/blue-6C18F795-F6E6-45AD-9572-A7D24993424A.png",
               "frame" : {
-                "y" : 683,
+                "y" : 768,
                 "x" : 346,
                 "width" : 192,
                 "height" : 192
@@ -102,7 +102,7 @@ window.__imported__["import_test/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 683,
+              "y" : 768,
               "x" : 346,
               "width" : 192,
               "height" : 192
@@ -119,7 +119,7 @@ window.__imported__["import_test/layers.json.js"] = [
             "image" : {
               "path" : "images\/red-771D48C5-7D0F-4E22-9B60-7840AEB38F8C.png",
               "frame" : {
-                "y" : 683,
+                "y" : 768,
                 "x" : 118,
                 "width" : 192,
                 "height" : 192
@@ -127,7 +127,7 @@ window.__imported__["import_test/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 683,
+              "y" : 768,
               "x" : 118,
               "width" : 192,
               "height" : 192
@@ -138,7 +138,7 @@ window.__imported__["import_test/layers.json.js"] = [
         "image" : {
           "path" : "images\/groupA-427C7AEB-54AC-4F93-9AD1-DDC2287C116C.png",
           "frame" : {
-            "y" : 683,
+            "y" : 768,
             "x" : 118,
             "width" : 420,
             "height" : 192
@@ -146,7 +146,7 @@ window.__imported__["import_test/layers.json.js"] = [
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 683,
+          "y" : 768,
           "x" : 118,
           "width" : 420,
           "height" : 192

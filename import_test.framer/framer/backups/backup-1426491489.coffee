@@ -25,7 +25,6 @@ for name, layer in importA.groupB.subLayers
 	print name, layer
 
 
-
 myObject =
     name: "Koen"
     city: "Amsterdam"
