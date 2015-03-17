@@ -127,7 +127,7 @@ window.__imported__["profile_you/layers.json.js"] = [
 
                 ],
                 "image" : {
-                  "path" : "images\/message-4C09F2C0-0F32-4500-9B8B-49710235196F.png",
+                  "path" : "images\/btn_message-4C09F2C0-0F32-4500-9B8B-49710235196F.png",
                   "frame" : {
                     "y" : 743,
                     "x" : 621,
@@ -142,7 +142,7 @@ window.__imported__["profile_you/layers.json.js"] = [
                   "width" : 60,
                   "height" : 60
                 },
-                "name" : "message"
+                "name" : "btn_message"
               }
             ],
             "image" : {
@@ -621,7 +621,105 @@ window.__imported__["profile_you/layers.json.js"] = [
         "id" : "1E9F7595-0076-48CB-B915-BA7C65B7440B",
         "visible" : true,
         "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "85DE60AC-1BFB-4FEE-B4ED-3EF45C3C3885",
+            "visible" : true,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "9455640C-CDB3-49E4-9CA9-FB68044C79A2",
+                "visible" : true,
+                "children" : [
 
+                ],
+                "image" : {
+                  "path" : "images\/bg_tag-9455640C-CDB3-49E4-9CA9-FB68044C79A2.png",
+                  "frame" : {
+                    "y" : 555,
+                    "x" : 0,
+                    "width" : 720,
+                    "height" : 100
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 555,
+                  "x" : 0,
+                  "width" : 720,
+                  "height" : 100
+                },
+                "name" : "bg_tag"
+              }
+            ],
+            "image" : {
+              "path" : "images\/bg_blue-85DE60AC-1BFB-4FEE-B4ED-3EF45C3C3885.png",
+              "frame" : {
+                "y" : 0,
+                "x" : 0,
+                "width" : 720,
+                "height" : 655
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 0,
+              "x" : 0,
+              "width" : 720,
+              "height" : 655
+            },
+            "name" : "bg_blue"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "75870CF2-C1D6-459A-B7F1-FB2DAA29AF05",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/bg_white-75870CF2-C1D6-459A-B7F1-FB2DAA29AF05.png",
+              "frame" : {
+                "y" : 48,
+                "x" : 0,
+                "width" : 720,
+                "height" : 1232
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 48,
+              "x" : 0,
+              "width" : 720,
+              "height" : 1232
+            },
+            "name" : "bg_white"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "EED6237F-4B7D-44A1-8481-1BDC56390C2E",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/bg_black-EED6237F-4B7D-44A1-8481-1BDC56390C2E.png",
+              "frame" : {
+                "y" : 0,
+                "x" : 0,
+                "width" : 720,
+                "height" : 1280
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 0,
+              "x" : 0,
+              "width" : 720,
+              "height" : 1280
+            },
+            "name" : "bg_black"
+          }
         ],
         "image" : {
           "path" : "images\/bg-1E9F7595-0076-48CB-B915-BA7C65B7440B.png",

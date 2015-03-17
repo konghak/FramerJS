@@ -9,9 +9,18 @@ Framer.Device.deviceType = "nexus-5-black"
 
 bg = new BackgroundLayer
 
+
+
 layerB = new Layer
-	backgroundColor : "red"
-print layerA, layerB
+
+print importA.layerA.backgroundColor, layerB.backgroundColor
+
+layerB.backgroundColor ="blue"
+importA.layerA.backgroundColor = "transparent"
+
+print importA.layerA.backgroundColor
+
+print importA.layerA.backgroundColor, layerB.backgroundColor
 
 importA.layerA.opacity = 0.5
 importA.red.opacity = 0.2

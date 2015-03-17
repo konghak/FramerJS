@@ -15,12 +15,11 @@ layer_dim = new Layer
 	height : Framer.Device.screen.height 
 
 
-#import한 레이어 image null 하기 (스케치에서 저장된 레이어는 png이다.)
+#bg layer 컬러 정의
 profile_you.bg_black.image=null
 profile_you.bg_white.image=null
 profile_you.bg_blue.image=null
 profile_you.bg_tag.image=null
-#bg layer 컬러 정의
 profile_you.bg_black.backgroundColor="rgba(0,0,0,1)"
 profile_you.bg_white.backgroundColor="rgba(255,255,255,1)"
 profile_you.bg_blue.backgroundColor="rgba(73,181,255,1)"
