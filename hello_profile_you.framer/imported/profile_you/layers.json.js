@@ -6,19 +6,68 @@ window.__imported__["profile_you/layers.json.js"] = [
     "visible" : true,
     "children" : [
       {
-        "maskFrame" : {
-          "y" : 380,
-          "x" : -25,
-          "width" : 770,
-          "height" : 520
-        },
+        "maskFrame" : null,
         "id" : "EC690C60-A27E-44B7-91D4-038D10A43AE0",
         "visible" : false,
         "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "FB133C0F-4833-45A3-84E0-190948CE937A",
+            "visible" : true,
+            "children" : [
 
+            ],
+            "image" : {
+              "path" : "images\/popup_text-FB133C0F-4833-45A3-84E0-190948CE937A.png",
+              "frame" : {
+                "y" : 433,
+                "x" : 15,
+                "width" : 682,
+                "height" : 427
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 433,
+              "x" : 15,
+              "width" : 682,
+              "height" : 427
+            },
+            "name" : "popup_text"
+          },
+          {
+            "maskFrame" : {
+              "y" : 380,
+              "x" : -25,
+              "width" : 770,
+              "height" : 520
+            },
+            "id" : "B05B4983-F801-4483-918A-95B221576222",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/popup_bg-B05B4983-F801-4483-918A-95B221576222.png",
+              "frame" : {
+                "y" : 380,
+                "x" : -25,
+                "width" : 770,
+                "height" : 520
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 380,
+              "x" : -25,
+              "width" : 770,
+              "height" : 520
+            },
+            "name" : "popup_bg"
+          }
         ],
         "image" : {
-          "path" : "images\/Rectangle_772__Rectangle_773-EC690C60-A27E-44B7-91D4-038D10A43AE0.png",
+          "path" : "images\/popup-EC690C60-A27E-44B7-91D4-038D10A43AE0.png",
           "frame" : {
             "y" : 380,
             "x" : -25,
@@ -33,11 +82,11 @@ window.__imported__["profile_you/layers.json.js"] = [
           "width" : 770,
           "height" : 520
         },
-        "name" : "Rectangle_772__Rectangle_773"
+        "name" : "popup"
       },
       {
         "maskFrame" : null,
-        "id" : "C3B78008-B763-4888-A064-01864CA6E208",
+        "id" : "664086F7-918E-44B0-AFBE-63E4593847F2",
         "visible" : true,
         "children" : [
           {
@@ -92,7 +141,7 @@ window.__imported__["profile_you/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/menu-C3B78008-B763-4888-A064-01864CA6E208.png",
+          "path" : "images\/menu-664086F7-918E-44B0-AFBE-63E4593847F2.png",
           "frame" : {
             "y" : 72,
             "x" : 470,
@@ -108,6 +157,31 @@ window.__imported__["profile_you/layers.json.js"] = [
           "height" : 260
         },
         "name" : "menu"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "4EE52301-8641-4F14-BD65-7EC4CCDB40EC",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/layer_area-4EE52301-8641-4F14-BD65-7EC4CCDB40EC.png",
+          "frame" : {
+            "y" : 0,
+            "x" : 0,
+            "width" : 720,
+            "height" : 1280
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 0,
+          "x" : 0,
+          "width" : 720,
+          "height" : 1280
+        },
+        "name" : "layer_area"
       },
       {
         "maskFrame" : null,
@@ -151,7 +225,7 @@ window.__imported__["profile_you/layers.json.js"] = [
                 "y" : 711,
                 "x" : 44,
                 "width" : 637,
-                "height" : 212
+                "height" : 207
               }
             },
             "imageType" : "png",
@@ -159,7 +233,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "y" : 711,
               "x" : 44,
               "width" : 637,
-              "height" : 212
+              "height" : 207
             },
             "name" : "mobile"
           },
@@ -176,7 +250,7 @@ window.__imported__["profile_you/layers.json.js"] = [
                 "y" : 1034,
                 "x" : 44,
                 "width" : 289,
-                "height" : 208
+                "height" : 203
               }
             },
             "imageType" : "png",
@@ -184,7 +258,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "y" : 1034,
               "x" : 44,
               "width" : 289,
-              "height" : 208
+              "height" : 203
             },
             "name" : "email"
           },
@@ -264,12 +338,12 @@ window.__imported__["profile_you/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/list_-D333EA56-FA32-4E4D-B51E-449D9A82201F.png",
+          "path" : "images\/list-D333EA56-FA32-4E4D-B51E-449D9A82201F.png",
           "frame" : {
             "y" : 711,
             "x" : 44,
             "width" : 676,
-            "height" : 531
+            "height" : 526
           }
         },
         "imageType" : "png",
@@ -277,9 +351,9 @@ window.__imported__["profile_you/layers.json.js"] = [
           "y" : 711,
           "x" : 44,
           "width" : 676,
-          "height" : 531
+          "height" : 526
         },
-        "name" : "list_"
+        "name" : "list"
       },
       {
         "maskFrame" : null,
@@ -441,7 +515,7 @@ window.__imported__["profile_you/layers.json.js"] = [
             "y" : 73,
             "x" : 41,
             "width" : 661,
-            "height" : 550
+            "height" : 547
           }
         },
         "imageType" : "png",
@@ -449,7 +523,7 @@ window.__imported__["profile_you/layers.json.js"] = [
           "y" : 73,
           "x" : 41,
           "width" : 661,
-          "height" : 550
+          "height" : 547
         },
         "name" : "profile_top"
       },
