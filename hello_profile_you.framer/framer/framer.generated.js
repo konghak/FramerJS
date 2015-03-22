@@ -25,16 +25,16 @@ window.__imported__["profile_you/layers.json.js"] = [
               "frame" : {
                 "y" : 535,
                 "x" : 115,
-                "width" : 480,
-                "height" : 220
+                "width" : 477,
+                "height" : 219
               }
             },
             "imageType" : "png",
             "layerFrame" : {
               "y" : 535,
               "x" : 115,
-              "width" : 480,
-              "height" : 220
+              "width" : 477,
+              "height" : 219
             },
             "name" : "popup_text"
           },
@@ -74,16 +74,16 @@ window.__imported__["profile_you/layers.json.js"] = [
           "frame" : {
             "y" : 535,
             "x" : 115,
-            "width" : 480,
-            "height" : 220
+            "width" : 477,
+            "height" : 219
           }
         },
         "imageType" : "png",
         "layerFrame" : {
           "y" : 535,
           "x" : 115,
-          "width" : 480,
-          "height" : 220
+          "width" : 477,
+          "height" : 219
         },
         "name" : "popup"
       },
@@ -102,17 +102,17 @@ window.__imported__["profile_you/layers.json.js"] = [
             "image" : {
               "path" : "images\/프로필_편집-3D1F06F1-9DAC-499F-B6EB-EE63E503C00F.png",
               "frame" : {
-                "y" : 116,
+                "y" : 115,
                 "x" : 510,
-                "width" : 131,
+                "width" : 126,
                 "height" : 174
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 116,
+              "y" : 115,
               "x" : 510,
-              "width" : 131,
+              "width" : 126,
               "height" : 174
             },
             "name" : "프로필_편집"
@@ -225,18 +225,18 @@ window.__imported__["profile_you/layers.json.js"] = [
             "image" : {
               "path" : "images\/mobile-B334151A-BBD9-4825-B223-7D43AFD063F4.png",
               "frame" : {
-                "y" : 706,
+                "y" : 704,
                 "x" : 40,
                 "width" : 623,
-                "height" : 207
+                "height" : 210
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 706,
+              "y" : 704,
               "x" : 40,
               "width" : 623,
-              "height" : 207
+              "height" : 210
             },
             "name" : "mobile"
           },
@@ -250,18 +250,18 @@ window.__imported__["profile_you/layers.json.js"] = [
             "image" : {
               "path" : "images\/email-BD94F3F5-ECF6-4E11-BB15-32FF7EAA1B2A.png",
               "frame" : {
-                "y" : 1029,
-                "x" : 40,
-                "width" : 289,
-                "height" : 203
+                "y" : 1027,
+                "x" : 41,
+                "width" : 260,
+                "height" : 204
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 1029,
-              "x" : 40,
-              "width" : 289,
-              "height" : 203
+              "y" : 1027,
+              "x" : 41,
+              "width" : 260,
+              "height" : 204
             },
             "name" : "email"
           },
@@ -343,18 +343,18 @@ window.__imported__["profile_you/layers.json.js"] = [
         "image" : {
           "path" : "images\/list-D333EA56-FA32-4E4D-B51E-449D9A82201F.png",
           "frame" : {
-            "y" : 706,
+            "y" : 704,
             "x" : 40,
             "width" : 676,
-            "height" : 526
+            "height" : 527
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 706,
+          "y" : 704,
           "x" : 40,
           "width" : 676,
-          "height" : 526
+          "height" : 527
         },
         "name" : "list"
       },
@@ -365,66 +365,42 @@ window.__imported__["profile_you/layers.json.js"] = [
         "children" : [
           {
             "maskFrame" : null,
-            "id" : "CF5DEA8A-183B-4D05-871B-8747F4D569CD",
+            "id" : "1756A0DE-2E15-4897-A187-B449ACDEBE60",
             "visible" : true,
             "children" : [
-              {
-                "maskFrame" : null,
-                "id" : "0244980C-9CF3-4E69-BBE4-C97F098FA675",
-                "visible" : true,
-                "children" : [
 
-                ],
-                "image" : {
-                  "path" : "images\/far-0244980C-9CF3-4E69-BBE4-C97F098FA675.png",
-                  "frame" : {
-                    "y" : 414,
-                    "x" : 262,
-                    "width" : 82,
-                    "height" : 82
-                  }
-                },
-                "imageType" : "png",
-                "layerFrame" : {
-                  "y" : 414,
-                  "x" : 262,
-                  "width" : 82,
-                  "height" : 82
-                },
-                "name" : "far"
-              },
-              {
-                "maskFrame" : null,
-                "id" : "A22CD9D6-8D8A-4BEA-8308-DCAE5EA66325",
-                "visible" : true,
-                "children" : [
-
-                ],
-                "image" : {
-                  "path" : "images\/share-A22CD9D6-8D8A-4BEA-8308-DCAE5EA66325.png",
-                  "frame" : {
-                    "y" : 414,
-                    "x" : 376,
-                    "width" : 82,
-                    "height" : 82
-                  }
-                },
-                "imageType" : "png",
-                "layerFrame" : {
-                  "y" : 414,
-                  "x" : 376,
-                  "width" : 82,
-                  "height" : 82
-                },
-                "name" : "share"
-              }
             ],
             "image" : {
-              "path" : "images\/buttom-CF5DEA8A-183B-4D05-871B-8747F4D569CD.png",
+              "path" : "images\/text_tag-1756A0DE-2E15-4897-A187-B449ACDEBE60.png",
+              "frame" : {
+                "y" : 588,
+                "x" : 40,
+                "width" : 324,
+                "height" : 30
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 588,
+              "x" : 40,
+              "width" : 324,
+              "height" : 30
+            },
+            "name" : "text_tag"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "0244980C-9CF3-4E69-BBE4-C97F098FA675",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/btn_fari-0244980C-9CF3-4E69-BBE4-C97F098FA675.png",
               "frame" : {
                 "y" : 414,
                 "x" : 262,
-                "width" : 196,
+                "width" : 82,
                 "height" : 82
               }
             },
@@ -432,10 +408,35 @@ window.__imported__["profile_you/layers.json.js"] = [
             "layerFrame" : {
               "y" : 414,
               "x" : 262,
-              "width" : 196,
+              "width" : 82,
               "height" : 82
             },
-            "name" : "buttom"
+            "name" : "btn_fari"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "A22CD9D6-8D8A-4BEA-8308-DCAE5EA66325",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/btn_share-A22CD9D6-8D8A-4BEA-8308-DCAE5EA66325.png",
+              "frame" : {
+                "y" : 414,
+                "x" : 376,
+                "width" : 82,
+                "height" : 82
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 414,
+              "x" : 376,
+              "width" : 82,
+              "height" : 82
+            },
+            "name" : "btn_share"
           },
           {
             "maskFrame" : null,
@@ -467,66 +468,92 @@ window.__imported__["profile_you/layers.json.js"] = [
             "id" : "CF9F283C-4C8B-47CB-BE5B-B42FC48E622A",
             "visible" : true,
             "children" : [
-              {
-                "maskFrame" : null,
-                "id" : "31ABE83A-FC64-4A0F-AC7F-7777B2BB0F7B",
-                "visible" : true,
-                "children" : [
 
-                ],
-                "image" : {
-                  "path" : "images\/btn_area-31ABE83A-FC64-4A0F-AC7F-7777B2BB0F7B.png",
-                  "frame" : {
-                    "y" : 73,
-                    "x" : 642,
-                    "width" : 60,
-                    "height" : 60
-                  }
-                },
-                "imageType" : "png",
-                "layerFrame" : {
-                  "y" : 73,
-                  "x" : 642,
-                  "width" : 60,
-                  "height" : 60
-                },
-                "name" : "btn_area"
-              }
             ],
             "image" : {
               "path" : "images\/btn_menu-CF9F283C-4C8B-47CB-BE5B-B42FC48E622A.png",
               "frame" : {
-                "y" : 73,
-                "x" : 642,
-                "width" : 60,
-                "height" : 60
+                "y" : 87,
+                "x" : 668,
+                "width" : 8,
+                "height" : 32
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 73,
-              "x" : 642,
-              "width" : 60,
-              "height" : 60
+              "y" : 87,
+              "x" : 668,
+              "width" : 8,
+              "height" : 32
             },
             "name" : "btn_menu"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "8E1A7CD3-AAA6-44CB-8258-1C77C3278AD5",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/img_profile-8E1A7CD3-AAA6-44CB-8258-1C77C3278AD5.png",
+              "frame" : {
+                "y" : 120,
+                "x" : 268,
+                "width" : 184,
+                "height" : 184
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 120,
+              "x" : 268,
+              "width" : 184,
+              "height" : 184
+            },
+            "name" : "img_profile"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "67B15986-D623-4D83-953E-CBD2B0D46876",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/text_name-67B15986-D623-4D83-953E-CBD2B0D46876.png",
+              "frame" : {
+                "y" : 335,
+                "x" : 230,
+                "width" : 258,
+                "height" : 33
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 335,
+              "x" : 230,
+              "width" : 258,
+              "height" : 33
+            },
+            "name" : "text_name"
           }
         ],
         "image" : {
           "path" : "images\/profile_top-687A544C-E959-46FF-83D0-1F5E961729B3.png",
           "frame" : {
-            "y" : 73,
-            "x" : 41,
-            "width" : 661,
-            "height" : 547
+            "y" : 87,
+            "x" : 40,
+            "width" : 636,
+            "height" : 531
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 73,
-          "x" : 41,
-          "width" : 661,
-          "height" : 547
+          "y" : 87,
+          "x" : 40,
+          "width" : 636,
+          "height" : 531
         },
         "name" : "profile_top"
       },
@@ -550,17 +577,17 @@ window.__imported__["profile_you/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/time-AE9C1F70-D80C-4E43-8F3B-194B327E7365.png",
                   "frame" : {
-                    "y" : 14,
-                    "x" : 640,
-                    "width" : 62,
+                    "y" : 15,
+                    "x" : 639,
+                    "width" : 63,
                     "height" : 21
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 14,
-                  "x" : 640,
-                  "width" : 62,
+                  "y" : 15,
+                  "x" : 639,
+                  "width" : 63,
                   "height" : 21
                 },
                 "name" : "time"
