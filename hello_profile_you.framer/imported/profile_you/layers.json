@@ -7,7 +7,7 @@
       {
         "maskFrame" : null,
         "id" : "EC690C60-A27E-44B7-91D4-038D10A43AE0",
-        "visible" : false,
+        "visible" : true,
         "children" : [
           {
             "maskFrame" : null,
@@ -19,18 +19,18 @@
             "image" : {
               "path" : "images\/popup_text-FB133C0F-4833-45A3-84E0-190948CE937A.png",
               "frame" : {
-                "y" : 433,
-                "x" : 15,
-                "width" : 682,
-                "height" : 427
+                "y" : 535,
+                "x" : 115,
+                "width" : 480,
+                "height" : 220
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 433,
-              "x" : 15,
-              "width" : 682,
-              "height" : 427
+              "y" : 535,
+              "x" : 115,
+              "width" : 480,
+              "height" : 220
             },
             "name" : "popup_text"
           },
@@ -42,7 +42,7 @@
               "height" : 520
             },
             "id" : "B05B4983-F801-4483-918A-95B221576222",
-            "visible" : true,
+            "visible" : false,
             "children" : [
 
             ],
@@ -68,18 +68,18 @@
         "image" : {
           "path" : "images\/popup-EC690C60-A27E-44B7-91D4-038D10A43AE0.png",
           "frame" : {
-            "y" : 380,
-            "x" : -25,
-            "width" : 770,
-            "height" : 520
+            "y" : 535,
+            "x" : 115,
+            "width" : 480,
+            "height" : 220
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 380,
-          "x" : -25,
-          "width" : 770,
-          "height" : 520
+          "y" : 535,
+          "x" : 115,
+          "width" : 480,
+          "height" : 220
         },
         "name" : "popup"
       },
@@ -194,44 +194,44 @@
             "children" : [
               {
                 "maskFrame" : null,
-                "id" : "4C09F2C0-0F32-4500-9B8B-49710235196F",
+                "id" : "71BFFA16-6F4B-44AA-9BF0-4FA4CCCB143C",
                 "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
-                  "path" : "images\/btn_message-4C09F2C0-0F32-4500-9B8B-49710235196F.png",
+                  "path" : "images\/message-71BFFA16-6F4B-44AA-9BF0-4FA4CCCB143C.png",
                   "frame" : {
-                    "y" : 743,
-                    "x" : 621,
+                    "y" : 748,
+                    "x" : 603,
                     "width" : 60,
                     "height" : 60
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 743,
-                  "x" : 621,
+                  "y" : 748,
+                  "x" : 603,
                   "width" : 60,
                   "height" : 60
                 },
-                "name" : "btn_message"
+                "name" : "message"
               }
             ],
             "image" : {
               "path" : "images\/mobile-B334151A-BBD9-4825-B223-7D43AFD063F4.png",
               "frame" : {
-                "y" : 711,
-                "x" : 44,
-                "width" : 637,
+                "y" : 706,
+                "x" : 40,
+                "width" : 623,
                 "height" : 207
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 711,
-              "x" : 44,
-              "width" : 637,
+              "y" : 706,
+              "x" : 40,
+              "width" : 623,
               "height" : 207
             },
             "name" : "mobile"
@@ -246,16 +246,16 @@
             "image" : {
               "path" : "images\/email-BD94F3F5-ECF6-4E11-BB15-32FF7EAA1B2A.png",
               "frame" : {
-                "y" : 1034,
-                "x" : 44,
+                "y" : 1029,
+                "x" : 40,
                 "width" : 289,
                 "height" : 203
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 1034,
-              "x" : 44,
+              "y" : 1029,
+              "x" : 40,
               "width" : 289,
               "height" : 203
             },
@@ -271,16 +271,16 @@
             "image" : {
               "path" : "images\/memo-A1E8F828-8506-4C38-A8CD-10E0F92ACA2C.png",
               "frame" : {
-                "y" : 1237,
-                "x" : -52,
+                "y" : 1232,
+                "x" : -56,
                 "width" : 676,
                 "height" : 288
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 1237,
-              "x" : -52,
+              "y" : 1232,
+              "x" : -56,
               "width" : 676,
               "height" : 288
             },
@@ -301,16 +301,16 @@
                 "image" : {
                   "path" : "images\/더보기__Line_12__Line_11-91869ED2-7900-49D7-9A96-8D14B38921C6.png",
                   "frame" : {
-                    "y" : 1615,
-                    "x" : -56,
+                    "y" : 1610,
+                    "x" : -60,
                     "width" : 832,
                     "height" : 260
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 1615,
-                  "x" : -56,
+                  "y" : 1610,
+                  "x" : -60,
                   "width" : 832,
                   "height" : 260
                 },
@@ -320,16 +320,16 @@
             "image" : {
               "path" : "images\/history-3162EF01-3480-41A8-AA4A-E182EDB9E797.png",
               "frame" : {
-                "y" : 1419,
-                "x" : -56,
+                "y" : 1414,
+                "x" : -60,
                 "width" : 834,
                 "height" : 456
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 1419,
-              "x" : -56,
+              "y" : 1414,
+              "x" : -60,
               "width" : 834,
               "height" : 456
             },
@@ -339,16 +339,16 @@
         "image" : {
           "path" : "images\/list-D333EA56-FA32-4E4D-B51E-449D9A82201F.png",
           "frame" : {
-            "y" : 711,
-            "x" : 44,
+            "y" : 706,
+            "x" : 40,
             "width" : 676,
             "height" : 526
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 711,
-          "x" : 44,
+          "y" : 706,
+          "x" : 40,
           "width" : 676,
           "height" : 526
         },

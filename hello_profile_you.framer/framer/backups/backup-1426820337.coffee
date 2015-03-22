@@ -140,13 +140,7 @@ sketch.btn_menu.on Events.Click, ->
 	menu.animate 
 		properties :
 			opacity : 1
-<<<<<<< HEAD
-		time : 0.2
-		curve : "cubic-bezier(0.80, 0.01, 0.3, 1.0)"
-	menu.placeBefore(layer_dim)	
-=======
 		
->>>>>>> bb2908f1a82b31b7377d4bf1c4bcfa96193c0853
 	layer_dim.opacity = 0
 	layer_dim.visible=true
 	
