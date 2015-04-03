@@ -2,7 +2,7 @@
 sketch = Framer.Importer.load "imported/profile_you"
 
 Framer.Device.deviceType = "nexus-5-black"
-Framer.Device.setContentScale(1.5, true)
+Framer.Device.setContentScale(1.05, true)
 # Framer.Device.fullScreen = true
 
 #기본 애니메이션 정의
@@ -11,8 +11,9 @@ Framer.Defaults.Animation =
 	time : 0.3
 
 
-print Framer.Device.screen.width
-print Framer.Device.screen.height 
+# print Framer.Device.screen.width
+# print Framer.Device.screen.height 
+
 
 
 # ##rename
@@ -27,33 +28,59 @@ main = sketch.main_artboard
 #basic
 status_bar = sketch.status_bar
 
+
 #main
 favri = sketch.favri
 
 #profile
+popup = sketch.popup
 popup_text = sketch.popup_text
+
+more = sketch.more
+
+
+container = sketch.container
+list_edit = sketch.list_edit
+list = sketch.list
+profile_top = sketch.profile_top
+btn_profilephoto_edit = sketch.btn_profilephoto_edit
+text_name = sketch.text_name
+text_tag = sketch.text_tag
+
+
+
+btn_prev = sketch.btn_prev
+btn_prev_dark = sketch.btn_prev_dark
+btn_more = sketch.btn_more
+btn_confirm = sketch.btn_confirm
+btn_star = sketch.btn_star
+btn_share = sketch.btn_share
+img_profile = sketch.img_profile
+
 bg_black = sketch.bg_black
 bg_white = sketch.bg_white
 bg_blue = sketch.bg_blue
 bg_tag = sketch.bg_tag
-popup = sketch.popup
-more = sketch.more
-profile_top = sketch.profile_top
-profile_top_area = sketch.profile_top_area
+
 
 #import한 레이어 image null 하기 (스케치에서 저장된 레이어는 png이다.)
-
-bg_black.image=null
 bg_white.image=null
 bg_blue.image=null
 bg_tag.image=null
-profile_top_area.image=null
+
+#import한 레이어 짤리지 않게
+container.scroll = true
+
 
 #bg layer 컬러 정의
-bg_black.backgroundColor="rgba(0,0,0,1)"
 bg_white.backgroundColor="rgba(255,255,255,1)"
 bg_blue.backgroundColor="rgba(73,181,255,1)"
 bg_tag.backgroundColor="rgba(0,0,0,0.1)"
+
+border = new Layer
+	border : 20
+	backgroundColor : "#ffffff"
+
 
 # ##basic_artboard 기본 레이어정의
 basic_bg = new Layer
@@ -118,9 +145,42 @@ popup.placeBefore(layer_dim)
 
 # ##profile_know_artboard 기본 레이어정의
 
-# 첫 시작시 메뉴 숨기기
+# 첫 시작시 숨기기
 more.visible = false
 more.opacity = 0
+
+btn_profilephoto_edit.visible = false
+btn_profilephoto_edit.opacity = 0
+
+btn_confirm.visible = false
+btn_confirm.opacity = 0
+
+bg_gray = new Layer
+	height : bg_blue.height, width : bg_blue.width
+	superLayer : bg_blue
+	backgroundColor : "rgba(241,241,241,1)"
+	opacity : 0
+bg_gray.visible = false
+
+print text_tag.y
+print text_name.y
+
+
+# #기본 오브젝트 위치 저장	
+ori_list_y = list.y
+ori_text_tag_y = text_tag.y
+ori_btn_star_y = btn_star.y
+ori_btn_share_y = btn_share.y
+ori_text_name_y = text_name.y
+ori_img_profile_y = img_profile.y
+ori_bg_gray_y = bg_gray.y
+ori_bg_blue_y = bg_blue.y
+ori_bg_blue_height = bg_blue.height
+ori_text_tag_y = list_edit.y		
+
+print ori_text_tag_y
+print ori_text_name_y
+
 
 # #기본영역 정의
 layer_area = new Layer
@@ -130,30 +190,135 @@ layer_area = new Layer
 
 more.placeBefore(layer_area)
 
-	
-	
-
 
 # #기본페이지 btn 정의
-btn_close = new Layer
-	width : 60, height : 60
-	x : 15, y : 15
-	backgroundColor : "transparent"
-	superLayer : profile_top
+profile_top.width = bg_blue.width
 
-sketch.btn_close.superLayer = btn_close
-sketch.btn_close.center()
+#btn_prev 정의
+for i in [0..1]
+	btn_previ = new Layer
+		width : 60, height : 60
+		x : 70 * i , y : 20
+		backgroundColor : "red"
+		name : i + ""
+		superLayer : container
+	
+	if btn_previ.name == "0"
+		sketch.btn_prev.superLayer = btn_previ
+		sketch.btn_prev.center()
+	else if btn_previ.name == "1"
+		sketch.btn_prev_dark.superLayer = btn_previ
+		sketch.btn_prev_dark.center()
+		btn_previ.visible = false
+		btn_prev_dark.visible = false
+		btn_prev_dark.opacity = 0
+		
+		
+	btn_previ.on Events.Click, (event, layer) ->
+		
+		# profile 내 이전버튼 
+		if layer.name == "0"
+			profile_know.animate
+				properties :
+					y : 1280
+			main.animate
+				properties :
+					scale : 1
+		# profile_edit 내 이전버튼		
+		else if layer.name == "1"
+			print "bb"
+			
+			# btn_prev_dark 사라지게
+			layer.animate
+				properties :
+					opacity : 0
+			Utils.delay 0.2, ->			
+				btn_previ.visible = false
+			
+			list.animate
+				properties : 
+					y : ori_list_y
+					opacity : 1
+				
+			bg_tag.animate
+				properties : 
+					opacity : 1
+					
+			text_tag.animate
+				properties : 
+					y : ori_text_tag_y
+					opacity : 1
+				delay : 0.05
+			print ori_text_tag_y
+				
+			btn_star.animate
+				properties : 
+					y : ori_btn_star_y
+					opacity : 1
+				delay : 0.1
+				
+			btn_share.animate
+				properties : 
+					y : ori_btn_share_y
+					opacity : 1
+				delay : 0.1
+				
+			text_name.animate
+				properties : 
+					y : ori_text_name_y
+					opacity : 1
+				delay : 0.15	
+				
+			img_profile.animate
+				properties :
+					y : ori_img_profile_y
+				delay : 0.2
+				
+			btn_profilephoto_edit.animate
+				properties :
+					opacity : 0
+				delay : 0.3
+			Utils.delay 0.6, ->
+				btn_profilephoto_edit.visible = false
+						
+			btn_prev_dark.animate
+				properties : 
+					opacity : 0
+				delay : 0.3
+			Utils.delay 0.6, ->
+				btn_prev_dark.visible = false
+			
+			bg_gray.animate
+				properties :
+					height : ori_bg_blue_height
+					opacity : 0
+				delay : 0.25
+			Utils.delay 0.55, ->
+				bg_gray.visible = false
+							
+			bg_blue.animate
+				properties :
+					height : ori_bg_blue_height
+					y : ori_bg_blue_y
+				delay : 0.25
+			
+			list_edit.animate
+				properties : 
+					y : 1280
+				time : 0.4
+				delay : 0.25
+
+
+
 
 btn_more = new Layer
 	width : 60, height : 60
-	x : profile_top_area.width-75, y : 15
+	x : profile_top.width-75, y : 20
 	backgroundColor : "transparent"
-	superLayer : profile_top
+	superLayer : container
 
 sketch.btn_more.superLayer = btn_more
 sketch.btn_more.center()
-
-profile_top_area.backgroundColor = "transparent"
 
 
 # ## onload 최초 위치 잡기
@@ -183,15 +348,7 @@ sketch.favri.on Events.Click,(event, layer) ->
 			
 	layer_area.visible = false
 
-# #profile
-# profile 닫기
-btn_close.on Events.Click, (event, layer) ->
-	profile_know.animate
-		properties :
-			y : 1280
-	main.animate
-		properties :
-			scale : 1
+# # profile
 
 # btn_more click
 btn_more.on Events.Click, ->	
@@ -216,27 +373,100 @@ sketch.more_bg.shadowY = 4
 sketch.more_bg.shadowBlur = 16
 sketch.more_bg.shadowColor = "rgba(0,0,0,0.40)"
 
+
+
+
+
+
+	
+
 # more_menu 생성
 for i in [0..2]
 	row = new Layer		
-		name : i
+		name : i 
 		width : more.width, height : 65
 		backgroundColor : "rgba(0,0,0,0)"
 		opacity : 1
 		superLayer : more
-		
+
 	row.y = (i * (row.height+10))+20
-	
 	row.on Events.Click, (event, layer) ->
 		if layer.name == 0
-			print 'aaaa'
+		# 프로필 편집
 			more.opacity = 0
 			more.visible = false
 			
+			# btn_prev_dark 보이게
+			btn_previ.visible = true
+			
+			list.animate
+				properties : 
+					y : list.y+100
+					opacity : 0
+				
+			bg_tag.animate
+				properties : 
+					opacity : 0
+					
+			text_tag.animate
+				properties : 
+					y : text_tag.y+100
+					opacity : 0
+				delay : 0.05
+				
+			btn_star.animate
+				properties : 
+					y : btn_star.y+100
+					opacity : 0
+				delay : 0.1
+				
+			btn_share.animate
+				properties : 
+					y : btn_share.y+100
+					opacity : 0
+				delay : 0.1
+				
+			text_name.animate
+				properties : 
+					y : text_name.y+100
+					opacity : 0
+				delay : 0.15	
+				
+			img_profile.animate
+				properties :
+					y : 130
+				delay : 0.2
+				
+			btn_profilephoto_edit.visible = true
+			btn_profilephoto_edit.animate
+				properties :
+					opacity : 1
+				delay : 0.3
+						
+			btn_prev_dark.visible = true
+			btn_prev_dark.animate
+				properties : 
+					opacity : 1
+				delay : 0.3
+			
+			bg_gray.visible = true
+			bg_gray.animate
+				properties :
+					height : 280
+					opacity : 1
+				delay : 0.25
+							
 			bg_blue.animate
 				properties :
 					height : 280
-					y : 123
+					y : 100
+				delay : 0.25
+			
+			list_edit.animate
+				properties : 
+					y : 380
+				time : 0.4
+				delay : 0.25
 			
 			
 			
@@ -244,6 +474,7 @@ for i in [0..2]
 		else if layer.name == 1
 			print 'bbbb'		
 		else if layer.name == 2
+		# 연락처 제거
 			more.opacity = 0
 			more.visible = false			
 			

@@ -77,10 +77,6 @@ bg_white.backgroundColor="rgba(255,255,255,1)"
 bg_blue.backgroundColor="rgba(73,181,255,1)"
 bg_tag.backgroundColor="rgba(0,0,0,0.1)"
 
-border = new Layer
-	border : 20
-	backgroundColor : "#ffffff"
-
 
 # ##basic_artboard 기본 레이어정의
 basic_bg = new Layer

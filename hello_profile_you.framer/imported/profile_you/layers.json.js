@@ -1795,25 +1795,25 @@ window.__imported__["profile_you/layers.json.js"] = [
               {
                 "maskFrame" : null,
                 "id" : "D233D2EB-FBF7-4FF2-BAD8-E8B3B7E0E9E5",
-                "visible" : false,
+                "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
                   "path" : "images\/btn_profilephoto_edit-D233D2EB-FBF7-4FF2-BAD8-E8B3B7E0E9E5.png",
                   "frame" : {
-                    "y" : 204,
-                    "x" : 298,
-                    "width" : 256,
-                    "height" : 256
+                    "y" : 267,
+                    "x" : 394,
+                    "width" : 60,
+                    "height" : 60
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 204,
-                  "x" : 298,
-                  "width" : 256,
-                  "height" : 256
+                  "y" : 267,
+                  "x" : 394,
+                  "width" : 60,
+                  "height" : 60
                 },
                 "name" : "btn_profilephoto_edit"
               },
@@ -1944,6 +1944,31 @@ window.__imported__["profile_you/layers.json.js"] = [
               },
               {
                 "maskFrame" : null,
+                "id" : "A4D9DF81-CE83-45FC-975B-D6E3D8AE4673",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/btn_confirm-A4D9DF81-CE83-45FC-975B-D6E3D8AE4673.png",
+                  "frame" : {
+                    "y" : 34,
+                    "x" : 624,
+                    "width" : 57,
+                    "height" : 29
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 34,
+                  "x" : 624,
+                  "width" : 57,
+                  "height" : 29
+                },
+                "name" : "btn_confirm"
+              },
+              {
+                "maskFrame" : null,
                 "id" : "CF9F283C-4C8B-47CB-BE5B-B42FC48E622A",
                 "visible" : true,
                 "children" : [
@@ -2023,7 +2048,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "frame" : {
                 "y" : 29,
                 "x" : 40,
-                "width" : 634,
+                "width" : 641,
                 "height" : 543
               }
             },
@@ -2031,7 +2056,7 @@ window.__imported__["profile_you/layers.json.js"] = [
             "layerFrame" : {
               "y" : 29,
               "x" : 40,
-              "width" : 634,
+              "width" : 641,
               "height" : 543
             },
             "name" : "profile_top"
