@@ -40,6 +40,7 @@ more = sketch.more
 
 
 container = sketch.container
+keyboard = sketch.keyboard
 list_edit = sketch.list_edit
 list = sketch.list
 profile_top = sketch.profile_top
@@ -76,10 +77,6 @@ container.scroll = true
 bg_white.backgroundColor="rgba(255,255,255,1)"
 bg_blue.backgroundColor="rgba(73,181,255,1)"
 bg_tag.backgroundColor="rgba(0,0,0,0.1)"
-
-border = new Layer
-	border : 20
-	backgroundColor : "#ffffff"
 
 
 # ##basic_artboard 기본 레이어정의
@@ -162,9 +159,6 @@ bg_gray = new Layer
 	opacity : 0
 bg_gray.visible = false
 
-print text_tag.y
-print text_name.y
-
 
 # #기본 오브젝트 위치 저장	
 ori_list_y = list.y
@@ -176,10 +170,8 @@ ori_img_profile_y = img_profile.y
 ori_bg_gray_y = bg_gray.y
 ori_bg_blue_y = bg_blue.y
 ori_bg_blue_height = bg_blue.height
-ori_text_tag_y = list_edit.y		
+ori_btn_profilephoto_edit_y = btn_profilephoto_edit.y
 
-print ori_text_tag_y
-print ori_text_name_y
 
 
 # #기본영역 정의
@@ -187,8 +179,19 @@ layer_area = new Layer
 	width : screen.width, height : screen.height
 	superLayer : profile_know
 	backgroundColor : "transparent"
+	opacity : 0.2
 
 more.placeBefore(layer_area)
+
+
+top_blue_bg = new Layer
+	height : 100, width : bg_blue.width
+	y : -100
+	backgroundColor : "rgba(73,181,255,1)"		
+	superLayer : container
+
+	
+
 
 
 # #기본페이지 btn 정의
@@ -198,8 +201,8 @@ profile_top.width = bg_blue.width
 for i in [0..1]
 	btn_previ = new Layer
 		width : 60, height : 60
-		x : 70 * i , y : 20
-		backgroundColor : "red"
+		x : 15 , y : 20
+		backgroundColor : "transparent"
 		name : i + ""
 		superLayer : container
 	
@@ -226,7 +229,6 @@ for i in [0..1]
 					scale : 1
 		# profile_edit 내 이전버튼		
 		else if layer.name == "1"
-			print "bb"
 			
 			# btn_prev_dark 사라지게
 			layer.animate
@@ -243,13 +245,12 @@ for i in [0..1]
 			bg_tag.animate
 				properties : 
 					opacity : 1
-					
+			
 			text_tag.animate
 				properties : 
 					y : ori_text_tag_y
 					opacity : 1
 				delay : 0.05
-			print ori_text_tag_y
 				
 			btn_star.animate
 				properties : 
@@ -277,7 +278,9 @@ for i in [0..1]
 			btn_profilephoto_edit.animate
 				properties :
 					opacity : 0
-				delay : 0.3
+					y : ori_btn_profilephoto_edit_y
+	
+				delay : 0.2
 			Utils.delay 0.6, ->
 				btn_profilephoto_edit.visible = false
 						
@@ -307,6 +310,8 @@ for i in [0..1]
 					y : 1280
 				time : 0.4
 				delay : 0.25
+				
+			
 
 
 
@@ -319,6 +324,7 @@ btn_more = new Layer
 
 sketch.btn_more.superLayer = btn_more
 sketch.btn_more.center()
+
 
 
 # ## onload 최초 위치 잡기
@@ -335,7 +341,7 @@ profile_know.y = 1280
 
 # # main
 # profile 불러오기
-sketch.favri.on Events.Click,(event, layer) ->
+sketch.favori.on Events.Click,(event, layer) ->
 	basic_bg.backgroundColor = "rgba(0,0,0,1)"
 	
 	main.animate
@@ -374,16 +380,10 @@ sketch.more_bg.shadowBlur = 16
 sketch.more_bg.shadowColor = "rgba(0,0,0,0.40)"
 
 
-
-
-
-
-	
-
 # more_menu 생성
 for i in [0..2]
 	row = new Layer		
-		name : i 
+		name : i
 		width : more.width, height : 65
 		backgroundColor : "rgba(0,0,0,0)"
 		opacity : 1
@@ -396,7 +396,14 @@ for i in [0..2]
 			more.opacity = 0
 			more.visible = false
 			
+			# layer_area 사라지게
+			layer_area.visible = false
+			
 			# btn_prev_dark 보이게
+			# btn_prev_dark 사라지게
+			btn_previ.animate
+				properties :
+					opacity : 1
 			btn_previ.visible = true
 			
 			list.animate
@@ -441,6 +448,7 @@ for i in [0..2]
 			btn_profilephoto_edit.animate
 				properties :
 					opacity : 1
+					y : 230
 				delay : 0.3
 						
 			btn_prev_dark.visible = true
@@ -467,6 +475,16 @@ for i in [0..2]
 					y : 380
 				time : 0.4
 				delay : 0.25
+				
+			# 수정 후 액션
+			list_edit.on Events.Click, (event, layer) ->
+				keyboard.animate
+					properties : 
+						y : 790
+				keyboard.on Events.Click, (event, layer) ->
+					top_blue_bg.animate
+						properties : 
+							y : 0
 			
 			
 			
@@ -532,6 +550,7 @@ for i in [0..2]
 				popup.animate
 					properties :
 						opacity : 1
+# 						y : popup_basic_y
 						rotation : 15
 					time : 0.8
 	

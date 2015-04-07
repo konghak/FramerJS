@@ -34060,7 +34060,7 @@ window.__imported__["profile_you/layers.json.js"] = [
 
             ],
             "image" : {
-              "path" : "images\/main_menu-66BF7CB1-90D4-4E27-A30A-1414967C682B.png",
+              "path" : "images\/btn_menu-66BF7CB1-90D4-4E27-A30A-1414967C682B.png",
               "frame" : {
                 "y" : 34,
                 "x" : 41,
@@ -34075,7 +34075,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "width" : 48,
               "height" : 32
             },
-            "name" : "main_menu"
+            "name" : "btn_menu"
           },
           {
             "maskFrame" : null,
@@ -34085,7 +34085,7 @@ window.__imported__["profile_you/layers.json.js"] = [
 
             ],
             "image" : {
-              "path" : "images\/title-F91A2EC8-B08E-473E-8359-430B50E99803.png",
+              "path" : "images\/BI-F91A2EC8-B08E-473E-8359-430B50E99803.png",
               "frame" : {
                 "y" : 34,
                 "x" : 127,
@@ -34100,7 +34100,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "width" : 199,
               "height" : 32
             },
-            "name" : "title"
+            "name" : "BI"
           },
           {
             "maskFrame" : null,
@@ -34582,7 +34582,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               }
             ],
             "image" : {
-              "path" : "images\/favri-72EF7A04-03F2-48C5-8D49-F0DE52E9EACA.png",
+              "path" : "images\/favori-72EF7A04-03F2-48C5-8D49-F0DE52E9EACA.png",
               "frame" : {
                 "y" : 267,
                 "x" : 58,
@@ -34597,7 +34597,7 @@ window.__imported__["profile_you/layers.json.js"] = [
               "width" : 610,
               "height" : 451
             },
-            "name" : "favri"
+            "name" : "favori"
           },
           {
             "maskFrame" : null,
@@ -35098,6 +35098,31 @@ window.__imported__["profile_you/layers.json.js"] = [
         "children" : [
           {
             "maskFrame" : null,
+            "id" : "C1333022-B026-4323-BE24-054D109D5991",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/keyboard-C1333022-B026-4323-BE24-054D109D5991.png",
+              "frame" : {
+                "y" : 1280,
+                "x" : 0,
+                "width" : 720,
+                "height" : 449
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 1280,
+              "x" : 0,
+              "width" : 720,
+              "height" : 449
+            },
+            "name" : "keyboard"
+          },
+          {
+            "maskFrame" : null,
             "id" : "BF0AA248-E697-4402-9FBD-A70B75E0AEE6",
             "visible" : true,
             "children" : [
@@ -35582,7 +35607,7 @@ window.__imported__["profile_you/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/btn_profilephoto_edit-D233D2EB-FBF7-4FF2-BAD8-E8B3B7E0E9E5.png",
                   "frame" : {
-                    "y" : 267,
+                    "y" : 217,
                     "x" : 394,
                     "width" : 60,
                     "height" : 60
@@ -35590,7 +35615,7 @@ window.__imported__["profile_you/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 267,
+                  "y" : 217,
                   "x" : 394,
                   "width" : 60,
                   "height" : 60
