@@ -149,8 +149,6 @@ more.opacity = 0
 btn_profilephoto_edit.visible = false
 btn_profilephoto_edit.opacity = 0
 
-btn_confirm.visible = false
-btn_confirm.opacity = 0
 
 bg_gray = new Layer
 	height : bg_blue.height, width : bg_blue.width
@@ -190,6 +188,10 @@ top_blue_bg = new Layer
 	backgroundColor : "rgba(73,181,255,1)"		
 	superLayer : container
 
+
+btn_confirm.superLayer = top_blue_bg
+btn_confirm.x = 628
+btn_confirm.y = 35
 	
 
 
@@ -215,7 +217,7 @@ for i in [0..1]
 		btn_previ.visible = false
 		btn_prev_dark.visible = false
 		btn_prev_dark.opacity = 0
-		
+
 		
 	btn_previ.on Events.Click, (event, layer) ->
 		
@@ -485,6 +487,99 @@ for i in [0..2]
 					top_blue_bg.animate
 						properties : 
 							y : 0
+						time : 0.2
+					btn_more.opacity = 0
+					btn_more.visible = false
+					
+					btn_confirm.visible = true
+					btn_confirm.opacity = 100
+					btn_confirm.on Events.Click, (event, layer) ->
+							# btn confirm 사라지기
+							top_blue_bg.animate
+								properties :
+									y : -100
+									
+							# btn_prev_dark 사라지게
+							layer.animate
+								properties :
+									opacity : 0
+							Utils.delay 0.2, ->	
+								btn_previ.visible = false
+			
+							list.animate
+								properties : 
+									y : ori_list_y
+									opacity : 1
+				
+							bg_tag.animate
+								properties : 
+									opacity : 1
+			
+							text_tag.animate
+								properties : 
+									y : ori_text_tag_y
+									opacity : 1
+				
+							btn_star.animate
+								properties : 
+									y : ori_btn_star_y
+									opacity : 1
+							btn_share.animate
+								properties : 
+									y : ori_btn_share_y
+									opacity : 1
+				
+							text_name.animate
+								properties : 
+									y : ori_text_name_y
+									opacity : 1
+				
+							img_profile.animate
+								properties :
+									y : ori_img_profile_y
+				
+							btn_profilephoto_edit.animate
+								properties :
+									opacity : 0
+									y : ori_btn_profilephoto_edit_y
+	
+							Utils.delay 0.6, ->
+								btn_profilephoto_edit.visible = false
+						
+							btn_prev_dark.animate
+								properties : 
+									opacity : 0
+							Utils.delay 0.6, ->
+								btn_prev_dark.visible = false
+			
+							bg_gray.animate
+								properties :
+									height : ori_bg_blue_height
+									opacity : 0
+							Utils.delay 0.55, ->
+								bg_gray.visible = false
+							
+							bg_blue.animate
+								properties :
+									height : ori_bg_blue_height
+									y : ori_bg_blue_y
+			
+							list_edit.animate
+								properties : 
+									y : 1280
+								time : 0.4
+							
+							btn_more.visible = true
+							btn_more.animate
+								properties :
+									opacity : 100
+							
+							keyboard.animate
+								properties :
+									y : 1280
+							
+	
+					
 			
 			
 			
