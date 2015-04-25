@@ -2,7 +2,7 @@
 sketch = Framer.Importer.load "imported/profile_you"
 
 Framer.Device.deviceType = "nexus-5-black"
-Framer.Device.setContentScale(1.5, true)
+Framer.Device.setContentScale(1.05, true)
 # Framer.Device.fullScreen = true
 
 #기본 애니메이션 정의

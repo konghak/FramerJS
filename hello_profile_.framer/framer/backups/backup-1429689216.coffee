@@ -61,7 +61,29 @@ more_bg.y = status_bar.height+40
 
 #more_bg 중심축 우상으로 바꾸기
 more_bg.originX = 1
-more_bg.originY = 0	
+more_bg.originY = 0
+
+
+# more_menu_list 생성 및 액션
+for i in [0..3]
+	row = new Layer		
+		name : i
+		width : 390, height : 90
+		backgroundColor : "rgba(0,0,0,1)"
+		opacity : 1
+		superLayer : more_bg
+
+	row.y = (i * (row.height+20))+40
+	row.on Events.Click, (event, layer) ->
+		if layer.name == 0
+			print "01"
+		else if layer.name == 1
+			print "02"
+		else if layer.name == 2
+			print "03"
+		else if layer.name == 3
+			print "04"
+	
 	
 # ### onload시 layer setting
 more_bg.visible = false
@@ -69,13 +91,15 @@ popup.visible = false
 layer_dim.visible = false
 
 # ### profile onload시 setting
+btn_prev_b.visible = false
+
 
 # ## 연락처 저장 후 bg color
 bg_profile_top_know.visible = false
 bg_profile_top_know.height = 0
 
-
 # ##profile on/off interaction
+
 favorites.on Events.Click,(event, layer) ->
 	main.animate
 		properties :
@@ -84,18 +108,6 @@ favorites.on Events.Click,(event, layer) ->
 	profile.animate
 		properties :
 			y : status_bar.height
-
-# ##profile btn_prev 
-btn_prev_w = new Layer 
-	x:50, y:52, width:90, height:70, image:"images/btn_prev_w.png"
-	superLayer : profile
-btn_prev_b = new Layer 
-	x:50, y:52, width:90, height:70, image:"images/btn_prev_b.png"
-	superLayer : profile
-	opacity : 0
-
-btn_prev_b.visible = false
-
 			
 btn_prev_w.on Events.Click,(event, layer) ->
 	profile.animate
@@ -106,6 +118,23 @@ btn_prev_w.on Events.Click,(event, layer) ->
 		properties :
 			scale : 1
 			
+
+# ##profile btn_more interaction
+
+btn_more.on Events.Click,(event, layer) ->
+	more_bg.visible = true
+	more_bg.animate
+		properties :
+			scale : 1
+			opacity : 1
+	
+	layer_dim.visible = true
+	
+	layer_dim.on Events.Click, (event, layer) ->
+		more_bg.visible = false
+		more_bg.scale = 0.5
+		more_bg.opacity = 0
+		layer_dim.visible = false
 		
 # ##profile btn_savenum interaction, flip
 # Set flip background layer
@@ -115,7 +144,7 @@ backLayer = new Layer
 	x:0, y:0, width:90, height:70, image:"images/btn_favori.png"
 
 # flipEffect input: (front, back, perspective, x, y, interaction, superLayer )
-flipCard.flipCard(frontLayer, backLayer, 1600, "spring(300,20,0)", 740, 52-22, profile)
+flipCard.flipCard(frontLayer, backLayer, 1600, "spring(300,20,0)", 740, 78, profile_top)
 
 backLayer.visible = false
 frontLayer.on Events.Click,(event, layer) ->
@@ -141,106 +170,8 @@ backLayer.on Events.Click,(event, layer) ->
 		bg_profile_top_know.visible = false
 		backLayer.visible = true
 		
-# ##profile btn_more interaction
-btn_more = new Layer 
-	x:948, y:52, width:90, height:70, image:"images/btn_more.png"
-	superLayer : profile
 
-btn_more.on Events.Click,(event, layer) ->
-	more_bg.visible = true
-	more_bg.animate
-		properties :
-			scale : 1
-			opacity : 1
-	time : 0.2
-	layer_dim.visible = true
-	
-	layer_dim.on Events.Click, (event, layer) ->
-		more_bg.visible = false
-		more_bg.scale = 0.2
-		more_bg.opacity = 0
-		layer_dim.visible = false
 
-# #more_menu_list 생성 및 액션
-for i in [0..3]
-	row = new Layer		
-		name : i
-		width : 390, height : 90
-		backgroundColor : "transparent"
-		opacity : 1
-		superLayer : more_bg
-	
-	#font style
-	row.style.color = "rgba(0,0,0,0.87)"
-	row.style.fontSize = "45px"
-	row.style.lineHeight = "45px"	
-	row.style.padding = "20px 0px 0px 40px"
-	
-	#row 행간
-	row.y = (i * (row.height+20))+40
-	#list lable
-	if row.name == 0
-		row.html = "편집"
-	else if row.name == 1
-		row.html = "공유"
-	else if row.name == 2
-		row.html = "차단"
-	else if row.name == 3
-		row.html = "제거"
-			
-	row.on Events.Click, (event, layer) ->
-		if layer.name == 0
-			#more_bg unvisible
-			more_bg.visible = false
-			more_bg.animate
-				properties :
-					scale : 0.2
-					opacity : 0
-			layer_dim.visible = false
-			
-			# btn change or unvisilbe
-			btn_prev_b.visible = true
-			btn_prev_b.animate
-				properties :
-					opacity : 1
-					
-			btn_prev_w.visible = false
-			btn_prev_w.animate
-				properties :
-					opacity : 0
-			
-			flipCard.visible = false
-			
-			btn_more.visible = false
-			
-				
-			text.animate
-				properties :
-					y : bg_top.height
-			
-			bg_profile_top_know.animate
-				properties :
-					height : 0
-		
-			bg_profile_top_unknow.animate
-				properties :
-					height : 0
-								
-			list_profile.animate
-				properties :
-					y : Screen.height
-					
-			list_profile_edit.animate
-				properties :
-					y : img_profile.maxY
-			
-	
-		else if layer.name == 1
-			print "02"
-		else if layer.name == 2
-			print "03"
-		else if layer.name == 3
-			print "04"
 
 
 
