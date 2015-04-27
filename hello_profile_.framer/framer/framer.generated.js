@@ -2187,17 +2187,17 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-time-074D5EF6-C140-464D-BA1F-42DBEA42FF4D.png",
               "frame" : {
-                "y" : 22,
-                "x" : 960,
-                "width" : 94,
+                "y" : 24,
+                "x" : 959,
+                "width" : 93,
                 "height" : 30
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 22,
-              "x" : 960,
-              "width" : 94,
+              "y" : 24,
+              "x" : 959,
+              "width" : 93,
               "height" : 30
             },
             "name" : "time"
@@ -2205,7 +2205,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           {
             "maskFrame" : {
               "y" : 15,
-              "x" : 906,
+              "x" : 905,
               "width" : 25,
               "height" : 39
             },
@@ -2218,7 +2218,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-battery-B4C6B45B-CC33-4A4E-8242-F2616A7A630C.png",
               "frame" : {
                 "y" : 15,
-                "x" : 906,
+                "x" : 905,
                 "width" : 25,
                 "height" : 39
               }
@@ -2226,7 +2226,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 15,
-              "x" : 906,
+              "x" : 905,
               "width" : 25,
               "height" : 39
             },
@@ -2235,7 +2235,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           {
             "maskFrame" : {
               "y" : 18,
-              "x" : 828,
+              "x" : 827,
               "width" : 37,
               "height" : 36
             },
@@ -2248,7 +2248,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-reception-08E38B75-84CD-42FC-AE74-2891752A9010.png",
               "frame" : {
                 "y" : 18,
-                "x" : 828,
+                "x" : 827,
                 "width" : 37,
                 "height" : 36
               }
@@ -2256,7 +2256,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 18,
-              "x" : 828,
+              "x" : 827,
               "width" : 37,
               "height" : 36
             },
@@ -2265,7 +2265,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           {
             "maskFrame" : {
               "y" : 18,
-              "x" : 750,
+              "x" : 749,
               "width" : 49,
               "height" : 36
             },
@@ -2278,7 +2278,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-wifi-751E0DF9-7065-4907-9CBB-1C4C8670EC42.png",
               "frame" : {
                 "y" : 18,
-                "x" : 750,
+                "x" : 749,
                 "width" : 49,
                 "height" : 36
               }
@@ -2286,7 +2286,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 18,
-              "x" : 750,
+              "x" : 749,
               "width" : 49,
               "height" : 36
             },
@@ -2297,16 +2297,16 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           "path" : "images\/Layer-status_bar_contents-60AC1200-DF4D-4B58-9B33-B7EAA3AEF2E6.png",
           "frame" : {
             "y" : 15,
-            "x" : 750,
-            "width" : 304,
+            "x" : 749,
+            "width" : 303,
             "height" : 39
           }
         },
         "imageType" : "png",
         "layerFrame" : {
           "y" : 15,
-          "x" : 750,
-          "width" : 304,
+          "x" : 749,
+          "width" : 303,
           "height" : 39
         },
         "name" : "status_bar_contents"
@@ -2322,7 +2322,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           "path" : "images\/Layer-status_bar_bg-C829A3E5-49FB-44D1-94FA-D040B9B7CF47.png",
           "frame" : {
             "y" : 0,
-            "x" : 1,
+            "x" : 0,
             "width" : 1080,
             "height" : 72
           }
@@ -2330,7 +2330,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "imageType" : "png",
         "layerFrame" : {
           "y" : 0,
-          "x" : 1,
+          "x" : 0,
           "width" : 1080,
           "height" : 72
         },
@@ -2342,14 +2342,21 @@ window.__imported__["hello_profile_/layers.json.js"] = [
     "imageType" : "png",
     "layerFrame" : {
       "y" : 0,
-      "x" : 1,
+      "x" : 0,
       "width" : 1080,
       "height" : 72
     },
     "name" : "status_bar"
   },
   {
-    "maskFrame" : null,
+    "maskFrame" : {
+      "y" : 72,
+      "x" : 1,
+      "width" : 1080,
+      "height" : 1920
+    },
+    "id" : "8B25AFA2-7B03-401B-A8FD-CCF524DE8771",
+    "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
@@ -2365,7 +2372,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-btn_addfreinds-03D67D83-A5F2-4234-827D-3EB9C2E08321.png",
               "frame" : {
                 "y" : 129,
-                "x" : 810,
+                "x" : 809,
                 "width" : 58,
                 "height" : 57
               }
@@ -2373,7 +2380,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 129,
-              "x" : 810,
+              "x" : 809,
               "width" : 58,
               "height" : 57
             },
@@ -2390,7 +2397,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-btn_dial-AB4A4F82-CE2A-4CA8-A19D-5DF814E36489.png",
               "frame" : {
                 "y" : 128,
-                "x" : 963,
+                "x" : 962,
                 "width" : 49,
                 "height" : 60
               }
@@ -2398,7 +2405,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 128,
-              "x" : 963,
+              "x" : 962,
               "width" : 49,
               "height" : 60
             },
@@ -2415,7 +2422,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-badge_new-0CA0C31A-1371-4740-9EA8-1D673081FC05.png",
               "frame" : {
                 "y" : 104,
-                "x" : 102,
+                "x" : 101,
                 "width" : 61,
                 "height" : 60
               }
@@ -2423,7 +2430,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 104,
-              "x" : 102,
+              "x" : 101,
               "width" : 61,
               "height" : 60
             },
@@ -2440,7 +2447,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-btn_sidemenu-C8D5A372-6795-4FDB-8EDE-5EAA5F54E51F.png",
               "frame" : {
                 "y" : 134,
-                "x" : 65,
+                "x" : 64,
                 "width" : 70,
                 "height" : 48
               }
@@ -2448,7 +2455,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 134,
-              "x" : 65,
+              "x" : 64,
               "width" : 70,
               "height" : 48
             },
@@ -2464,18 +2471,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-BI-22DEFD8D-DDAA-47F6-953C-9129ADABEFF2.png",
               "frame" : {
-                "y" : 135,
-                "x" : 206,
-                "width" : 295,
-                "height" : 46
+                "y" : 149,
+                "x" : 204,
+                "width" : 293,
+                "height" : 45
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 135,
-              "x" : 206,
-              "width" : 295,
-              "height" : 46
+              "y" : 149,
+              "x" : 204,
+              "width" : 293,
+              "height" : 45
             },
             "name" : "BI"
           },
@@ -2489,18 +2496,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-Tap-C5BCAB3E-83F1-4990-9C28-E739C8B5005B.png",
               "frame" : {
-                "y" : 282,
-                "x" : 1,
-                "width" : 1081,
-                "height" : 90
+                "y" : 285,
+                "x" : 0,
+                "width" : 1080,
+                "height" : 87
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 282,
-              "x" : 1,
-              "width" : 1081,
-              "height" : 90
+              "y" : 285,
+              "x" : 0,
+              "width" : 1080,
+              "height" : 87
             },
             "name" : "Tap"
           },
@@ -2515,7 +2522,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "path" : "images\/Layer-top_bg-3FF9EB9B-E231-413F-93C6-368C3EEB9987.png",
               "frame" : {
                 "y" : 71,
-                "x" : 0,
+                "x" : -2,
                 "width" : 1084,
                 "height" : 304
               }
@@ -2523,7 +2530,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "imageType" : "png",
             "layerFrame" : {
               "y" : 71,
-              "x" : 0,
+              "x" : -2,
               "width" : 1084,
               "height" : 304
             },
@@ -2535,7 +2542,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "imageType" : "png",
         "layerFrame" : {
           "y" : 71,
-          "x" : 0,
+          "x" : -2,
           "width" : 1084,
           "height" : 304
         },
@@ -2579,18 +2586,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-sub_title_favori-A7C39487-1FD7-4E74-9FDD-A381852CC13B.png",
               "frame" : {
-                "y" : 391,
+                "y" : 393,
                 "x" : 1,
                 "width" : 1080,
-                "height" : 53
+                "height" : 51
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 391,
+              "y" : 393,
               "x" : 1,
               "width" : 1080,
-              "height" : 53
+              "height" : 51
             },
             "name" : "sub_title_favori"
           },
@@ -2639,7 +2646,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 869,
                     "x" : 765,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 325
                   }
                 },
                 "imageType" : "png",
@@ -2647,7 +2654,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 869,
                   "x" : 765,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 325
                 },
                 "name" : "fav_02_03"
               },
@@ -2718,7 +2725,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 869,
                     "x" : 421,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 323
                   }
                 },
                 "imageType" : "png",
@@ -2726,7 +2733,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 869,
                   "x" : 421,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 323
                 },
                 "name" : "fav_02_02"
               },
@@ -2772,7 +2779,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 869,
                     "x" : 80,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 325
                   }
                 },
                 "imageType" : "png",
@@ -2780,7 +2787,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 869,
                   "x" : 80,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 325
                 },
                 "name" : "fav_02_01"
               },
@@ -2826,7 +2833,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 494,
                     "x" : 765,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 323
                   }
                 },
                 "imageType" : "png",
@@ -2834,7 +2841,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 494,
                   "x" : 765,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 323
                 },
                 "name" : "fav_01_03"
               },
@@ -2880,7 +2887,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 494,
                     "x" : 421,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 323
                   }
                 },
                 "imageType" : "png",
@@ -2888,7 +2895,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 494,
                   "x" : 421,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 323
                 },
                 "name" : "fav_01_02"
               },
@@ -2934,7 +2941,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                     "y" : 494,
                     "x" : 80,
                     "width" : 241,
-                    "height" : 322
+                    "height" : 325
                   }
                 },
                 "imageType" : "png",
@@ -2942,7 +2949,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 494,
                   "x" : 80,
                   "width" : 241,
-                  "height" : 322
+                  "height" : 325
                 },
                 "name" : "fav_01_01"
               }
@@ -2954,7 +2961,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "y" : 494,
               "x" : 80,
               "width" : 926,
-              "height" : 697
+              "height" : 700
             },
             "name" : "favorites"
           },
@@ -3180,7 +3187,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "y" : 1878,
                   "x" : 61,
                   "width" : 126,
-                  "height" : 127
+                  "height" : 114
                 },
                 "id" : "23BF04D4-C34B-4220-983D-D60E0DC2C5EA",
                 "visible" : true,
@@ -3231,10 +3238,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "children" : [
               {
                 "maskFrame" : {
-                  "y" : 2058,
-                  "x" : 61,
-                  "width" : 126,
-                  "height" : 126
+                  "y" : 1958,
+                  "x" : -39,
+                  "width" : 326,
+                  "height" : 326
                 },
                 "id" : "603DB3E4-235B-42CD-AE58-213E58B17A44",
                 "visible" : true,
@@ -3310,10 +3317,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               },
               {
                 "maskFrame" : {
-                  "y" : 2234,
-                  "x" : 61,
-                  "width" : 126,
-                  "height" : 127
+                  "y" : 2134,
+                  "x" : -39,
+                  "width" : 326,
+                  "height" : 327
                 },
                 "id" : "51EED920-1E07-4BB9-AB29-B5B47A43E064",
                 "visible" : true,
@@ -3364,10 +3371,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "children" : [
               {
                 "maskFrame" : {
-                  "y" : 2394,
-                  "x" : 61,
-                  "width" : 126,
-                  "height" : 126
+                  "y" : 2294,
+                  "x" : -39,
+                  "width" : 326,
+                  "height" : 326
                 },
                 "id" : "A402C275-83A3-4D0D-88C4-CADD0F641051",
                 "visible" : true,
@@ -3418,10 +3425,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "children" : [
               {
                 "maskFrame" : {
-                  "y" : 2563,
-                  "x" : 61,
-                  "width" : 126,
-                  "height" : 127
+                  "y" : 2463,
+                  "x" : -39,
+                  "width" : 326,
+                  "height" : 327
                 },
                 "id" : "8A897B1A-03C4-4973-8EA8-BB53763B091B",
                 "visible" : true,
@@ -3470,10 +3477,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "visible" : true,
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 391,
+          "y" : 393,
           "x" : 1,
           "width" : 1081,
-          "height" : 2313
+          "height" : 2311
         },
         "name" : "list_contact"
       },
@@ -3488,7 +3495,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           "path" : "images\/Layer-bg_main-B01519BB-78D0-4D6B-ABB0-E0AFCBE4E584.png",
           "frame" : {
             "y" : 371,
-            "x" : 1,
+            "x" : 0,
             "width" : 1080,
             "height" : 1621
           }
@@ -3496,26 +3503,40 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "imageType" : "png",
         "layerFrame" : {
           "y" : 371,
-          "x" : 1,
+          "x" : 0,
           "width" : 1080,
           "height" : 1621
         },
         "name" : "bg_main"
       }
     ],
-    "id" : "8B25AFA2-7B03-401B-A8FD-CCF524DE8771",
-    "visible" : true,
+    "image" : {
+      "path" : "images\/Layer-main-8B25AFA2-7B03-401B-A8FD-CCF524DE8771.png",
+      "frame" : {
+        "y" : 72,
+        "x" : 1,
+        "width" : 1080,
+        "height" : 1920
+      }
+    },
     "imageType" : "png",
     "layerFrame" : {
-      "y" : 71,
-      "x" : 0,
-      "width" : 1084,
-      "height" : 2633
+      "y" : 72,
+      "x" : 1,
+      "width" : 1080,
+      "height" : 1920
     },
     "name" : "main"
   },
   {
-    "maskFrame" : null,
+    "maskFrame" : {
+      "y" : 72,
+      "x" : 0,
+      "width" : 1080,
+      "height" : 1920
+    },
+    "id" : "946DF689-7988-460B-B14C-D3F7BBA2DD83",
+    "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
@@ -3530,18 +3551,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-img_profile-6D54403D-D383-42EC-ACD7-474BD98D9226.png",
               "frame" : {
-                "y" : 2165,
-                "x" : 59,
-                "width" : 181,
-                "height" : 180
+                "y" : 222,
+                "x" : 187,
+                "width" : 200,
+                "height" : 200
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 2165,
-              "x" : 59,
-              "width" : 181,
-              "height" : 180
+              "y" : 222,
+              "x" : 187,
+              "width" : 200,
+              "height" : 200
             },
             "name" : "img_profile"
           },
@@ -3558,16 +3579,16 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-text_name-B4D85C31-462E-4BC3-968A-1DB76B71B280.png",
                   "frame" : {
-                    "y" : 2186,
-                    "x" : 296,
+                    "y" : 469,
+                    "x" : 195,
                     "width" : 159,
                     "height" : 56
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 2186,
-                  "x" : 296,
+                  "y" : 469,
+                  "x" : 195,
                   "width" : 159,
                   "height" : 56
                 },
@@ -3583,16 +3604,16 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-text_tags-5EB21932-0D6F-461C-9D35-7E41EF8E8C4E.png",
                   "frame" : {
-                    "y" : 2272,
-                    "x" : 292,
+                    "y" : 552,
+                    "x" : 191,
                     "width" : 504,
                     "height" : 47
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 2272,
-                  "x" : 292,
+                  "y" : 552,
+                  "x" : 191,
                   "width" : 504,
                   "height" : 47
                 },
@@ -3603,197 +3624,87 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "visible" : true,
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 2186,
-              "x" : 292,
+              "y" : 469,
+              "x" : 191,
               "width" : 504,
-              "height" : 133
+              "height" : 130
             },
             "name" : "text"
           },
           {
             "maskFrame" : null,
-            "id" : "5304774D-B067-496B-8168-DF7658A46FD5",
-            "visible" : true,
             "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "5D39BEAE-9A30-4FA1-A41D-4329209B49C9",
+                "visible" : true,
+                "children" : [
 
-            ],
-            "image" : {
-              "path" : "images\/Layer-btn_savenum-5304774D-B067-496B-8168-DF7658A46FD5.png",
-              "frame" : {
-                "y" : 1981,
-                "x" : 779,
-                "width" : 69,
-                "height" : 52
+                ],
+                "image" : {
+                  "path" : "images\/Layer-bg_profile_top_know-5D39BEAE-9A30-4FA1-A41D-4329209B49C9.png",
+                  "frame" : {
+                    "y" : 72,
+                    "x" : 0,
+                    "width" : 1080,
+                    "height" : 580
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 72,
+                  "x" : 0,
+                  "width" : 1080,
+                  "height" : 580
+                },
+                "name" : "bg_profile_top_know"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-bg_profile_top_unknow-9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE.png",
+                  "frame" : {
+                    "y" : 72,
+                    "x" : 0,
+                    "width" : 1080,
+                    "height" : 580
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 72,
+                  "x" : 0,
+                  "width" : 1080,
+                  "height" : 580
+                },
+                "name" : "bg_profile_top_unknow"
               }
-            },
+            ],
+            "id" : "532639E4-110A-4262-8F79-DB8D79B57BD6",
+            "visible" : true,
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 1981,
-              "x" : 779,
-              "width" : 69,
-              "height" : 52
-            },
-            "name" : "btn_savenum"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "CB25A8FE-D638-4CCA-9C6A-A1F0000527E6",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-btn_favori-CB25A8FE-D638-4CCA-9C6A-A1F0000527E6.png",
-              "frame" : {
-                "y" : 1978,
-                "x" : 785,
-                "width" : 54,
-                "height" : 56
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1978,
-              "x" : 785,
-              "width" : 54,
-              "height" : 56
-            },
-            "name" : "btn_favori"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "031EDF5F-46A1-4D24-830E-BB88F9872AEF",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-btn_more-031EDF5F-46A1-4D24-830E-BB88F9872AEF.png",
-              "frame" : {
-                "y" : 1972,
-                "x" : 948,
-                "width" : 90,
-                "height" : 70
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1972,
-              "x" : 948,
-              "width" : 90,
-              "height" : 70
-            },
-            "name" : "btn_more"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "C73A26DE-924A-4D1B-B994-123FDBFA351C",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-btn_prev_w-C73A26DE-924A-4D1B-B994-123FDBFA351C.png",
-              "frame" : {
-                "y" : 1984,
-                "x" : 63,
-                "width" : 51,
-                "height" : 49
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1984,
-              "x" : 63,
-              "width" : 51,
-              "height" : 49
-            },
-            "name" : "btn_prev_w"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "73B00DF7-2C13-4DFC-8DC6-21CEDFE25DBF",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-btn_prev_b-73B00DF7-2C13-4DFC-8DC6-21CEDFE25DBF.png",
-              "frame" : {
-                "y" : 1984,
-                "x" : 63,
-                "width" : 51,
-                "height" : 49
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1984,
-              "x" : 63,
-              "width" : 51,
-              "height" : 49
-            },
-            "name" : "btn_prev_b"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "5D39BEAE-9A30-4FA1-A41D-4329209B49C9",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-bg_profile_top_know-5D39BEAE-9A30-4FA1-A41D-4329209B49C9.png",
-              "frame" : {
-                "y" : 1920,
-                "x" : 0,
-                "width" : 1080,
-                "height" : 480
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1920,
+              "y" : 72,
               "x" : 0,
               "width" : 1080,
-              "height" : 480
+              "height" : 580
             },
-            "name" : "bg_profile_top_know"
-          },
-          {
-            "maskFrame" : null,
-            "id" : "9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE",
-            "visible" : true,
-            "children" : [
-
-            ],
-            "image" : {
-              "path" : "images\/Layer-bg_profile_top_unknow-9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE.png",
-              "frame" : {
-                "y" : 1920,
-                "x" : 0,
-                "width" : 1080,
-                "height" : 480
-              }
-            },
-            "imageType" : "png",
-            "layerFrame" : {
-              "y" : 1920,
-              "x" : 0,
-              "width" : 1080,
-              "height" : 480
-            },
-            "name" : "bg_profile_top_unknow"
+            "name" : "bg_top"
           }
         ],
         "id" : "FA50ABB6-3278-42F3-B781-2B85462A4BC5",
         "visible" : true,
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 1920,
+          "y" : 72,
           "x" : 0,
           "width" : 1080,
-          "height" : 480
+          "height" : 580
         },
         "name" : "profile_top"
       },
@@ -3812,18 +3723,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_01-19FD87BC-17E9-47BE-AF1E-5BE27811774B.png",
               "frame" : {
-                "y" : 3839,
+                "y" : 2095,
                 "x" : 58,
                 "width" : 956,
-                "height" : 263
+                "height" : 254
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 3839,
+              "y" : 2095,
               "x" : 58,
               "width" : 956,
-              "height" : 263
+              "height" : 254
             },
             "name" : "row_01"
           },
@@ -3842,7 +3753,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-icon_dontw-F1171259-59F2-4FAF-82B7-08F8CE422D29.png",
                   "frame" : {
-                    "y" : 4294,
+                    "y" : 2543,
                     "x" : 981,
                     "width" : 27,
                     "height" : 24
@@ -3850,7 +3761,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 4294,
+                  "y" : 2543,
                   "x" : 981,
                   "width" : 27,
                   "height" : 24
@@ -3861,18 +3772,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_02-E1B62E2E-7D5D-43FD-8C9F-C582637D5367.png",
               "frame" : {
-                "y" : 4198,
+                "y" : 2454,
                 "x" : 58,
                 "width" : 956,
-                "height" : 348
+                "height" : 341
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 4198,
+              "y" : 2454,
               "x" : 58,
               "width" : 956,
-              "height" : 348
+              "height" : 341
             },
             "name" : "row_02"
           },
@@ -3891,7 +3802,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-icon_dontw_2-230E0076-F030-40CD-85BD-439D19FBE5CD.png",
                   "frame" : {
-                    "y" : 4777,
+                    "y" : 3026,
                     "x" : 981,
                     "width" : 27,
                     "height" : 24
@@ -3899,7 +3810,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 4777,
+                  "y" : 3026,
                   "x" : 981,
                   "width" : 27,
                   "height" : 24
@@ -3910,7 +3821,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_03-5D8A6B7F-D245-454B-B966-8596681262B4.png",
               "frame" : {
-                "y" : 4668,
+                "y" : 2924,
                 "x" : 58,
                 "width" : 956,
                 "height" : 194
@@ -3918,7 +3829,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 4668,
+              "y" : 2924,
               "x" : 58,
               "width" : 956,
               "height" : 194
@@ -3935,7 +3846,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_04-9367492F-071B-4C7D-9E06-BE1540E42BE6.png",
               "frame" : {
-                "y" : 5023,
+                "y" : 3272,
                 "x" : 58,
                 "width" : 956,
                 "height" : 3
@@ -3943,7 +3854,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 5023,
+              "y" : 3272,
               "x" : 58,
               "width" : 956,
               "height" : 3
@@ -3965,7 +3876,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-btn_filedadd-897008E4-1EE9-4FCB-9B40-9069B43BE5B6.png",
                   "frame" : {
-                    "y" : 5071,
+                    "y" : 3320,
                     "x" : 938,
                     "width" : 75,
                     "height" : 75
@@ -3973,7 +3884,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 5071,
+                  "y" : 3320,
                   "x" : 938,
                   "width" : 75,
                   "height" : 75
@@ -3990,7 +3901,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-btn_fileddelet-F622BF63-717A-42E5-B3FA-CCAEDFA08DAE.png",
                   "frame" : {
-                    "y" : 4908,
+                    "y" : 3157,
                     "x" : 938,
                     "width" : 75,
                     "height" : 75
@@ -3998,7 +3909,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 4908,
+                  "y" : 3157,
                   "x" : 938,
                   "width" : 75,
                   "height" : 75
@@ -4009,7 +3920,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_05-92833848-BC6E-4860-B8FE-DC1EE859EA22.png",
               "frame" : {
-                "y" : 4908,
+                "y" : 3157,
                 "x" : 58,
                 "width" : 956,
                 "height" : 238
@@ -4017,7 +3928,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 4908,
+              "y" : 3157,
               "x" : 58,
               "width" : 956,
               "height" : 238
@@ -4034,18 +3945,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_06-80B91904-6D5A-4AEF-893F-076370B2DF21.png",
               "frame" : {
-                "y" : 5219,
+                "y" : 3475,
                 "x" : 58,
                 "width" : 956,
-                "height" : 324
+                "height" : 315
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 5219,
+              "y" : 3475,
               "x" : 58,
               "width" : 956,
-              "height" : 324
+              "height" : 315
             },
             "name" : "row_06"
           },
@@ -4059,7 +3970,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-btn_addfiled-A74533B9-462D-4D3A-BEB1-F1C619C6D752.png",
               "frame" : {
-                "y" : 5686,
+                "y" : 3935,
                 "x" : 58,
                 "width" : 957,
                 "height" : 150
@@ -4067,7 +3978,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 5686,
+              "y" : 3935,
               "x" : 58,
               "width" : 957,
               "height" : 150
@@ -4078,7 +3989,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "image" : {
           "path" : "images\/Layer-list_profile_edit-FB4F5AB8-4C38-417A-A080-E5BE86785596.png",
           "frame" : {
-            "y" : 3768,
+            "y" : 2017,
             "x" : 0,
             "width" : 1080,
             "height" : 2130
@@ -4086,7 +3997,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 3768,
+          "y" : 2017,
           "x" : 0,
           "width" : 1080,
           "height" : 2130
@@ -4108,18 +4019,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_01-A00E1377-B96D-4064-9FE6-EDC866DB353E.png",
               "frame" : {
-                "y" : 2468,
+                "y" : 717,
                 "x" : 76,
                 "width" : 950,
-                "height" : 111
+                "height" : 118
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 2468,
+              "y" : 717,
               "x" : 76,
               "width" : 950,
-              "height" : 111
+              "height" : 118
             },
             "name" : "row_01"
           },
@@ -4133,18 +4044,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_02-9604A75F-1B64-4FE2-9AC7-F4BD56623140.png",
               "frame" : {
-                "y" : 2667,
+                "y" : 926,
                 "x" : 190,
                 "width" : 890,
-                "height" : 185
+                "height" : 175
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 2667,
+              "y" : 926,
               "x" : 190,
               "width" : 890,
-              "height" : 185
+              "height" : 175
             },
             "name" : "row_02"
           },
@@ -4158,18 +4069,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_03-42116068-7A21-402B-9A44-7A12EE26AD53.png",
               "frame" : {
-                "y" : 2928,
+                "y" : 1187,
                 "x" : 75,
                 "width" : 1005,
-                "height" : 377
+                "height" : 367
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 2928,
+              "y" : 1187,
               "x" : 75,
               "width" : 1005,
-              "height" : 377
+              "height" : 367
             },
             "name" : "row_03"
           },
@@ -4183,18 +4094,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_04-8A2426E2-B516-4F4F-B690-222CA5B58947.png",
               "frame" : {
-                "y" : 3376,
+                "y" : 1635,
                 "x" : 78,
                 "width" : 1002,
-                "height" : 186
+                "height" : 176
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 3376,
+              "y" : 1635,
               "x" : 78,
               "width" : 1002,
-              "height" : 186
+              "height" : 176
             },
             "name" : "row_04"
           },
@@ -4213,7 +4124,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-icon_history-0A7B224E-9692-4237-B19E-2120C44FB162.png",
                   "frame" : {
-                    "y" : 3649,
+                    "y" : 1898,
                     "x" : 72,
                     "width" : 55,
                     "height" : 54
@@ -4221,7 +4132,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 3649,
+                  "y" : 1898,
                   "x" : 72,
                   "width" : 55,
                   "height" : 54
@@ -4232,18 +4143,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_05-0AA31E37-30C2-4136-BD46-9660CFE661F5.png",
               "frame" : {
-                "y" : 3649,
+                "y" : 1898,
                 "x" : 72,
                 "width" : 948,
-                "height" : 500
+                "height" : 507
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 3649,
+              "y" : 1898,
               "x" : 72,
               "width" : 948,
-              "height" : 500
+              "height" : 507
             },
             "name" : "row_05"
           },
@@ -4257,18 +4168,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-row_06-51E0423D-AC6C-4292-940F-0138D2CCAB98.png",
               "frame" : {
-                "y" : 4312,
+                "y" : 2562,
                 "x" : 190,
                 "width" : 829,
-                "height" : 293
+                "height" : 299
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 4312,
+              "y" : 2562,
               "x" : 190,
               "width" : 829,
-              "height" : 293
+              "height" : 299
             },
             "name" : "row_06"
           }
@@ -4276,7 +4187,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "image" : {
           "path" : "images\/Layer-list_profile-DBD6AEFE-DB04-4839-B688-C054F282D87F.png",
           "frame" : {
-            "y" : 2398,
+            "y" : 647,
             "x" : 0,
             "width" : 1080,
             "height" : 2282
@@ -4284,7 +4195,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 2398,
+          "y" : 647,
           "x" : 0,
           "width" : 1080,
           "height" : 2282
@@ -4292,71 +4203,53 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "name" : "list_profile"
       }
     ],
-    "id" : "946DF689-7988-460B-B14C-D3F7BBA2DD83",
-    "visible" : true,
+    "image" : {
+      "path" : "images\/Layer-profile-946DF689-7988-460B-B14C-D3F7BBA2DD83.png",
+      "frame" : {
+        "y" : 72,
+        "x" : 0,
+        "width" : 1080,
+        "height" : 1920
+      }
+    },
     "imageType" : "png",
     "layerFrame" : {
-      "y" : 1920,
+      "y" : 72,
       "x" : 0,
       "width" : 1080,
-      "height" : 3978
+      "height" : 1920
     },
     "name" : "profile"
   },
   {
     "maskFrame" : null,
-    "id" : "2D183F57-D13D-444F-B838-DE3434CDB76E",
-    "visible" : false,
-    "children" : [
-
-    ],
-    "image" : {
-      "path" : "images\/Layer-menu_more-2D183F57-D13D-444F-B838-DE3434CDB76E.png",
-      "frame" : {
-        "y" : 13,
-        "x" : 545,
-        "width" : 590,
-        "height" : 701
-      }
-    },
-    "imageType" : "png",
-    "layerFrame" : {
-      "y" : 13,
-      "x" : 545,
-      "width" : 590,
-      "height" : 701
-    },
-    "name" : "menu_more"
-  },
-  {
-    "maskFrame" : null,
     "id" : "D3CCF214-29C6-4596-ACD1-F2D695E81EC3",
-    "visible" : true,
+    "visible" : false,
     "children" : [
 
     ],
     "image" : {
       "path" : "images\/Layer-popup_text-D3CCF214-29C6-4596-ACD1-F2D695E81EC3.png",
       "frame" : {
-        "y" : 2077,
-        "x" : 183,
-        "width" : 714,
-        "height" : 339
+        "y" : 1975,
+        "x" : 81,
+        "width" : 921,
+        "height" : 565
       }
     },
     "imageType" : "png",
     "layerFrame" : {
-      "y" : 2077,
-      "x" : 183,
-      "width" : 714,
-      "height" : 339
+      "y" : 1975,
+      "x" : 81,
+      "width" : 921,
+      "height" : 565
     },
     "name" : "popup_text"
   },
   {
     "maskFrame" : null,
     "id" : "F34A7405-3C9A-46DB-AC17-54AA192097D4",
-    "visible" : false,
+    "visible" : true,
     "children" : [
 
     ],
