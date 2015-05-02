@@ -54,3 +54,5 @@ exports.flipCard = (front, back, perspective, flipCurve, x, y, superLayer) ->
         back.states.next(["back","front"])
         front.states.next(["back","front"])
 
+exports.btn_plue_01 = () ->
+

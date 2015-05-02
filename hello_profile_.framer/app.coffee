@@ -2,16 +2,21 @@
 sketch = Framer.Importer.load "imported/hello_profile_"
 
 Framer.Device.deviceType = "nexus-5-black"
-Framer.Device.setContentScale(0.7, true)
+Framer.Device.setContentScale(1, true)
 
 # ##Include module 
 # flip 모션 모듈
 flipCard = require "flipCard"
 
 # 기본 애니메이션 정의
+ease_in = "cubic-bezier(0.9, 0, 0.8, 0.9)"
+ease_in_out = "cubic-bezier(0.25, 0.0, 0.16, 1)"
+
 Framer.Defaults.Animation = 
-	curve : "cubic-bezier(0.2, 0.0, 0.2, 1)"
+	curve : "cubic-bezier(0.25, 0.0, 0.16, 1)"
 	time : 0.4
+	
+# defaultsCurve = "cubic-bezier(0.2, 0.0, 0.2, 1)"
 	
 #import한 모든 layer direct로 불러들일 수 있게 (rename 필요없음)
 Utils.globalLayers(sketch)
@@ -31,17 +36,25 @@ popup = new Layer
 	width : 855, height : 480
 	backgroundColor : "rgba(255,255,255,1)"
 	borderRadius : 4
-	opacity : 1
+	opacity : 0
 	shadowY : 45
 	shadowBlur : 50
 	shadowColor : "rgba(0,0,0,0.4)"
 	name : "popup"
-	
-popup.center()
 
 popup_text.superLayer = popup
 popup_text.center()
 
+btn_delete = new Layer
+	width : 160, height : 95
+	x : popup.maxX-185, y : popup.maxY-140
+	backgroundColor : "transparent"
+	superLayer : popup
+
+
+# popup basic position, 정가운데에서 100 아래로
+popup.centerX(0)
+popup.centerY(200)
 
 #more menu layer 정의
 more_bg = new Layer
@@ -79,8 +92,14 @@ ori_profile_top = [profile_top.x, profile_top.y]
 ori_list_profile = [list_profile.x, list_profile.y]
 ori_list_profile_me = [list_profile_me.x, list_profile_me.y]
 
+# ##profile_top basic position
+# profile_top.y = ori_profile_top[1] + 400
+img_profile.y = ori_img_profile[1] + 400
+text.y = ori_text[1] + 400
+img_profile_me.y = ori_img_profile_me[1] + 400
+text_me.y = ori_text_me[1] + 400
 
-profile_top.y = ori_profile_top[1] + 400
+bg_profile_top_blue.height = 1000
 list_profile.y = ori_list_profile[1] + 400
 list_profile_me.y = ori_list_profile_me[1] + 400
 
@@ -92,16 +111,11 @@ icon_camera.opacity = 0
 # ##white bg top 
 bg_profile_top_white.y = - bg_profile_top_white.height
 
-# ## 연락처 저장 후 bg color
-bg_profile_top_know.visible = false
-bg_profile_top_know.height = 0
-
 profile_you = ""
 profile_me = ""
 
 prev_w_condtion = ""
 prev_b_condtion = ""
-
 
 # ##profile on/off interaction
 fav_01_01.on Events.Click,(event, layer) ->
@@ -118,16 +132,26 @@ fav_01_01.on Events.Click,(event, layer) ->
 	profile.animate
 		properties :
 			y : status_bar.height
-	
-	profile_top.animate
-		properties :
-			y : ori_profile_top[1]
+			
+	img_profile.animate
+		properties : 
+			y : ori_img_profile[1]
 		time : 0.5
+	
+	text.animate
+		properties :
+			y : ori_text[1]
+		time : 0.5
+		
+	bg_profile_top_blue.animate
+		properties :
+			height : 580
+		time : 0.6
 
 	list_profile.animate
 		properties :
 			y : ori_list_profile[1]
-		time : 0.55
+		time : 0.7
 				
 	img_profile.visible = true
 	text.visible = true
@@ -156,16 +180,26 @@ fav_01_02.on Events.Click,(event, layer) ->
 	profile.animate
 		properties :
 			y : status_bar.height
-			
-	profile_top.animate
-		properties :
-			y : ori_profile_top[1]
+	
+	img_profile_me.animate
+		properties : 
+			y : ori_img_profile_me[1]
 		time : 0.5
-
+	
+	text_me.animate
+		properties :
+			y : ori_text_me[1]
+		time : 0.5
+		
+	bg_profile_top_blue.animate
+		properties :
+			height : 580
+		time : 0.6
+		
 	list_profile_me.animate
 		properties :
 			y : ori_list_profile_me[1]
-		time : 0.55
+		time : 0.7
 				
 	img_profile.visible = false
 	text.visible = false
@@ -179,7 +213,6 @@ fav_01_02.on Events.Click,(event, layer) ->
 	
 	btn_tag.visible = true
 			
-
 # ##profile btn_prev 
 btn_prev_w = new Layer 
 	x:50, y:52, width:90, height:70, image:"images/btn_prev_w.png"
@@ -194,24 +227,29 @@ prev_b_condtion = ''
 
 btn_prev_b.visible = false
 
-# ## btn_prev interation
-			
+# ## btn_prev interation	
 btn_prev_w.on Events.Click,(event, layer) -> 
 	if prev_w_condtion == "profile_you_01" or prev_w_condtion == "profile_me_01"
-	
-		profile_top.y = ori_profile_top[1] + 400
-		list_profile.y = ori_list_profile[1] + 400
-		list_profile_me.y = ori_list_profile_me[1] + 400
 
 		profile.animate
 			properties :
 				y : Screen.height
+			curve : ease_in
 	
 		main.animate
 			properties :
 				scale : 1
 	
 		keyboard.y = Screen.height
+		
+		Utils.delay 0.4, ->
+			img_profile.y = ori_img_profile[1] + 400
+			text.y = ori_text[1] + 400
+			img_profile_me.y = ori_img_profile_me[1] + 400
+			text_me.y = ori_text_me[1] + 400
+			bg_profile_top_blue.height = 1000
+			list_profile.y = ori_list_profile[1] + 400
+			list_profile_me.y = ori_list_profile_me[1] + 400
 		
 	else if prev_w_condtion == "profile_you_edit_cancel"
 	
@@ -266,11 +304,7 @@ btn_prev_w.on Events.Click,(event, layer) ->
 				y : ori_text[1]
 				opacity : 1
 			
-		bg_profile_top_know.animate
-			properties :
-				height : 580
-		
-		bg_profile_top_unknow.animate
+		bg_profile_top_blue.animate
 			properties :
 				height : 580
 								
@@ -289,12 +323,8 @@ btn_prev_w.on Events.Click,(event, layer) ->
 		prev_w_condtion = 'profile_me_01'
 		
 		btn_tag.visible = true
-		
-		bg_profile_top_unknow.animate
-			properties :
-				height : 580
 			
-		bg_profile_top_know.animate
+		bg_profile_top_blue.animate
 			properties :
 				height : 580
 			
@@ -338,8 +368,7 @@ btn_prev_w.on Events.Click,(event, layer) ->
 				scale : 1
 				
 		keyboard.y = Screen.height
-
-		
+	
 #btn_prev_b
 btn_prev_b.on Events.Click, (event, layer) ->
 	prev_w_condtion = 'profile_you_01'
@@ -388,11 +417,7 @@ btn_prev_b.on Events.Click, (event, layer) ->
 			y : ori_text[1]
 			opacity : 1
 			
-	bg_profile_top_know.animate
-		properties :
-			height : 580
-		
-	bg_profile_top_unknow.animate
+	bg_profile_top_blue.animate
 		properties :
 			height : 580
 								
@@ -406,10 +431,6 @@ btn_prev_b.on Events.Click, (event, layer) ->
 						
 	keyboard.y = Screen.height
 
-
-	
-
-
 		
 # ##profile btn_savenum interaction, flip
 # Set flip background layer
@@ -418,40 +439,14 @@ frontLayer = new Layer
 backLayer = new Layer 
 	x:0, y:0, width:90, height:70, image:"images/btn_favori.png"
 
-# flipEffect input: (front, back, perspective, x, y, interaction, superLayer )
+# flipEffect input: (front, back, perspective, x, y, superLayer )
 flipCard.flipCard(frontLayer, backLayer, 1600, "spring(300,20,0)", 740, 52-22, profile)
-
-
-backLayer.visible = false
-frontLayer.on Events.Click,(event, layer) ->
-	#top_bg color change
-	backLayer.visible = true
-	bg_profile_top_know.visible = true
-	bg_profile_top_know.animate
-		properties :
-			height : bg_profile_top_unknow.height
-		time : 0.1
-	Utils.delay 0.1, ->
-# 		bg_profile_top_unknow.visible = false
-		frontLayer.visible = false
-		
-backLayer.on Events.Click,(event, layer) ->
-	#top_bg color change
-	frontLayer.visible = true
-	bg_profile_top_know.animate
-		properties :
-			height : 0
-		time : 0.1
-	Utils.delay 0.1, ->
-		bg_profile_top_know.visible = false
-		backLayer.visible = true
 
 		
 # ##profile btn_more interaction
 btn_more = new Layer 
 	x:948, y:52, width:90, height:70, image:"images/btn_more.png"
 	superLayer : profile
-
 
 btn_more.on Events.Click,(event, layer) ->
 	if profile_you == "on"
@@ -468,8 +463,22 @@ btn_more.on Events.Click,(event, layer) ->
 			more_bg.visible = false
 			more_bg.scale = 0.2
 			more_bg.opacity = 0
-			layer_dim.visible = false
 			
+			layer_dim.animate
+				properties :
+					opacity : 0		
+			Utils.delay 0.4, ->
+				layer_dim.visible = false
+			
+			popup.animate
+				properties :
+					y : 920
+					opacity : 0
+				time : 0.2
+			Utils.delay 0.4, ->
+				popup.visible = false
+
+
 # ##profile btn_tag interaction
 btn_tag = new Layer 
 	x:770, y:52, width:90, height:70, image:"images/btn_tag.png"
@@ -482,11 +491,7 @@ btn_tag.on Events.Click, (event, layer) ->
 	
 	prev_w_condtion = 'list_tags_ok'
 	
-	bg_profile_top_unknow.animate
-		properties :
-			height : 320
-			
-	bg_profile_top_know.animate
+	bg_profile_top_blue.animate
 		properties :
 			height : 320
 			
@@ -521,6 +526,7 @@ btn_tag.on Events.Click, (event, layer) ->
 	text_name_me.animate
 		properties :
 			scale : 0
+			y : this.y - 50
 	
 	text_tags_me.originX = 0
 	text_tags_me.orignY = 0
@@ -624,11 +630,7 @@ for i in [0..3]
 					y : bg_top.height
 					opacity : 0
 			
-			bg_profile_top_know.animate
-				properties :
-					height : 0
-		
-			bg_profile_top_unknow.animate
+			bg_profile_top_blue.animate
 				properties :
 					height : 0
 								
@@ -651,13 +653,10 @@ for i in [0..3]
 					
 					prev_w_condtion = 'profile_you_edit_cancel'
 					
-					bg_profile_top_know.animate
+					bg_profile_top_blue.animate
 						properties :
 							height : 171
-						time : 0.2
-					bg_profile_top_unknow.animate
-						properties :
-							height : 171
+						curve : ease_in
 						time : 0.2
 							
 					btn_confirm.visible = true	
@@ -729,11 +728,7 @@ for i in [0..3]
 						y : ori_text[1]
 						opacity : 1
 			
-				bg_profile_top_know.animate
-					properties :
-						height : 580
-		
-				bg_profile_top_unknow.animate
+				bg_profile_top_blue.animate
 					properties :
 						height : 580
 				
@@ -755,8 +750,87 @@ for i in [0..3]
 		else if layer.name == 2
 			print "03"
 		else if layer.name == 3
-			print "04"
+		
+			more_bg.visible = false
+			more_bg.scale = 0.2
+			more_bg.opacity = 0
+			
+			layer_dim.visible = true
+			layer_dim.animate
+				properties :
+					opacity : 0.6
+					
+			popup.visible = true
+			popup.animate
+				properties :
+					opacity : 1
+					y : 720
+				time : 0.2
+					
+			btn_delete.on Events.Click,(event, layer) ->
+				popup.animate
+					properties :
+						y : Screen.height + 100
+					curve : ease_in
+					time : 0.4
+					
+				layer_dim.animate
+					properties :
+						opacity : 0		
+											
+				Utils.delay 0.35, ->
+					main.animate
+						properties :
+							scale : 1
+			
+					profile.animate
+						properties :
+							y : Screen.height
+							
+				Utils.delay 0.5, ->
+					main.animate
+						properties :
+							scale : 1		
+					snack_bar.animate
+						properties :
+							y : snack_bar.y-snack_bar.height
+					
+					btn_search.animate
+						properties :
+							y : btn_search.y - snack_bar.height
+					
+					Utils.delay 2, ->
+						snack_bar.animate
+							properties :
+								y : 1920
+						btn_search.animate
+							properties :
+								y : btn_search.y + snack_bar.height
+					
+				Utils.delay 0.8, ->
+					layer_dim.visible = false
+					popup.visible = false
+					popup.opacity = 0
+					popup.y = 920
+					
+					
+# ##search on/off interaction
+top_bg_blue = new Layer
+	width : Screen.width, height : 0
+	y : status_bar.height
+	backgroundColor : "rgba(73,181,255,1)"
+	
 
+	
+
+
+
+
+
+
+					
+	
+					
 
 
 

@@ -327,7 +327,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-BI-22DEFD8D-DDAA-47F6-953C-9129ADABEFF2.png",
               "frame" : {
-                "y" : 149,
+                "y" : 131,
                 "x" : 203,
                 "width" : 293,
                 "height" : 45
@@ -335,7 +335,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : 149,
+              "y" : 131,
               "x" : 203,
               "width" : 293,
               "height" : 45
@@ -1638,7 +1638,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
 
                 ],
                 "image" : {
-                  "path" : "images\/Layer-bg_profile_top_know-5D39BEAE-9A30-4FA1-A41D-4329209B49C9.png",
+                  "path" : "images\/Layer-bg_profile_top_blue-5D39BEAE-9A30-4FA1-A41D-4329209B49C9.png",
                   "frame" : {
                     "y" : 1920,
                     "x" : 0,
@@ -1653,32 +1653,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "width" : 1080,
                   "height" : 580
                 },
-                "name" : "bg_profile_top_know"
-              },
-              {
-                "maskFrame" : null,
-                "id" : "9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE",
-                "visible" : true,
-                "children" : [
-
-                ],
-                "image" : {
-                  "path" : "images\/Layer-bg_profile_top_unknow-9F1373BC-A40A-492C-8D7F-A6BC1E2CDCCE.png",
-                  "frame" : {
-                    "y" : 1920,
-                    "x" : 0,
-                    "width" : 1080,
-                    "height" : 580
-                  }
-                },
-                "imageType" : "png",
-                "layerFrame" : {
-                  "y" : 1920,
-                  "x" : 0,
-                  "width" : 1080,
-                  "height" : 580
-                },
-                "name" : "bg_profile_top_unknow"
+                "name" : "bg_profile_top_blue"
               },
               {
                 "maskFrame" : null,
@@ -1878,6 +1853,31 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "children" : [
               {
                 "maskFrame" : null,
+                "id" : "D468473E-2BD4-4451-9CCD-FE233AE28534",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-btn_filedadd_copy_4-D468473E-2BD4-4451-9CCD-FE233AE28534.png",
+                  "frame" : {
+                    "y" : 4178,
+                    "x" : 949,
+                    "width" : 75,
+                    "height" : 76
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 4178,
+                  "x" : 949,
+                  "width" : 75,
+                  "height" : 76
+                },
+                "name" : "btn_filedadd_copy_4"
+              },
+              {
+                "maskFrame" : null,
                 "id" : "8F0D7638-BD29-4082-A784-295FF480EF9D",
                 "visible" : true,
                 "children" : [
@@ -1900,31 +1900,6 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                   "height" : 76
                 },
                 "name" : "btn_filedadd_copy_3"
-              },
-              {
-                "maskFrame" : null,
-                "id" : "F84999B9-7AEA-4AAE-B1F9-85D760772A70",
-                "visible" : true,
-                "children" : [
-
-                ],
-                "image" : {
-                  "path" : "images\/Layer-btn_filedadd_copy_2-F84999B9-7AEA-4AAE-B1F9-85D760772A70.png",
-                  "frame" : {
-                    "y" : 4179,
-                    "x" : 950,
-                    "width" : 75,
-                    "height" : 74
-                  }
-                },
-                "imageType" : "png",
-                "layerFrame" : {
-                  "y" : 4179,
-                  "x" : 950,
-                  "width" : 75,
-                  "height" : 74
-                },
-                "name" : "btn_filedadd_copy_2"
               },
               {
                 "maskFrame" : null,
@@ -2628,27 +2603,52 @@ window.__imported__["hello_profile_/layers.json.js"] = [
   {
     "maskFrame" : null,
     "id" : "D3CCF214-29C6-4596-ACD1-F2D695E81EC3",
-    "visible" : false,
+    "visible" : true,
     "children" : [
 
     ],
     "image" : {
       "path" : "images\/Layer-popup_text-D3CCF214-29C6-4596-ACD1-F2D695E81EC3.png",
       "frame" : {
-        "y" : 1975,
-        "x" : 81,
-        "width" : 921,
-        "height" : 565
+        "y" : 2083,
+        "x" : 181,
+        "width" : 712,
+        "height" : 334
       }
     },
     "imageType" : "png",
     "layerFrame" : {
-      "y" : 1975,
-      "x" : 81,
-      "width" : 921,
-      "height" : 565
+      "y" : 2083,
+      "x" : 181,
+      "width" : 712,
+      "height" : 334
     },
     "name" : "popup_text"
+  },
+  {
+    "maskFrame" : null,
+    "id" : "BBC3E2A3-3DFA-4444-8D64-C0CE9C461B4C",
+    "visible" : true,
+    "children" : [
+
+    ],
+    "image" : {
+      "path" : "images\/Layer-snack_bar-BBC3E2A3-3DFA-4444-8D64-C0CE9C461B4C.png",
+      "frame" : {
+        "y" : 1920,
+        "x" : 0,
+        "width" : 1080,
+        "height" : 168
+      }
+    },
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 1920,
+      "x" : 0,
+      "width" : 1080,
+      "height" : 168
+    },
+    "name" : "snack_bar"
   },
   {
     "maskFrame" : null,
