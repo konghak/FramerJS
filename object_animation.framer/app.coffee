@@ -58,11 +58,16 @@ circle_01.on Events.Click,(events, layer) ->
 		circle_01.states.next()
 					
 # check on/off ------------------------------------------------------#
-
-check_off = new Layer
+check_container = new Layer
 	y : circle_01.maxY + 100
 	width : 100, height : 100
+	backgroundColor : "transparent"
+check_container.centerX(0)
+
+check_off = new Layer
+	width : 100, height : 100
 	backgroundColor : "rgba(0,0,0,0.24)"
+	superLayer : check_container
 check_off.borderRadius = check_off.width/2
 
 check_off_in = new Layer
@@ -75,7 +80,7 @@ check_off_in.center()
 check_on = new Layer
 	width : 100, height : 100
 	backgroundColor : "rgba(73,181,255,1)"
-	superLayer : check_off
+	superLayer : check_container
 check_on.borderRadius = check_on.width/2
 check_on.originX = 0.5
 check_on.originY = 0.5
@@ -86,7 +91,7 @@ chline_short = new Layer
 	width : 20, height : 8
 	backgroundColor : "rgba(255,255,255,1)"
 	rotationZ : 45
-	superLayer : check_off
+	superLayer : check_on
 chline_short.borderRadius = chline_short.width/2
 chline_short.originX = 0
 chline_short.originY = 0
@@ -96,7 +101,7 @@ chline_long = new Layer
 	width : 50, height : 8
 	backgroundColor : "rgba(255,255,255,1)"
 	rotationZ : -45
-	superLayer : check_off
+	superLayer : check_on
 chline_long.borderRadius = chline_long.width/2
 chline_long.originX = 0
 chline_long.originY = 0
@@ -108,32 +113,124 @@ chline_short.centerY(0)
 chline_long.centerX(41)
 chline_long.centerY(19)
 
-check_off.centerX(0)
-check_off.clip = false
+check_container.clip = false
 
 chline_short.states.add
 	second : { width : 30 }
 
 chline_long.states.add
 	second : { width : 50}
-check_on.states.add
-	second : {scale : 1}
-	
-check_on.states.animationOptions = 
-		curve: "spring(100, 10, 5)"
 
 	
 check_off.on Events.Click,(events, layer) ->
 	check_on.visible = true
-	check_on.states.next()
+	check_on.animate
+		properties :
+			scale : 1
+		curve : "spring(100, 10, 5)"
+		time : 0.1
 	Utils.delay 0.2,->
 		chline_short.states.next()
 		Utils.delay 0.2,->
 			chline_long.states.next()
-	check_on.on Events.Click, (events, layer) ->
-		check_on.visible = false
+
+
+check_on.on Events.Click, (events, layer) ->
+	check_on.animate
+		properties :
+			scale : 0
+		time : 0.1
+	chline_short.states.next()
+	chline_long.states.next()
+
+
+# tag plus/min ------------------------------------------------------#
+
+tag_container = new Layer
+	y : check_container.maxY + 100
+	width : 100, height : 100
+	backgroundColor : "transparent"
+tag_container.centerX(0)
+
+check_off = new Layer
+	width : 100, height : 100
+	backgroundColor : "rgba(0,0,0,0.24)"
+	superLayer : tag_container
+check_off.borderRadius = check_off.width/2
+
+check_off_in = new Layer
+	width : check_off.width-6, height : check_off.height-6
+	backgroundColor : "rgba(255,255,255,1)"
+	superLayer : check_off
+check_off_in.borderRadius = check_off_in.width/2
+check_off_in.center()
+
+check_on = new Layer
+	width : 100, height : 100
+	backgroundColor : "rgba(73,181,255,1)"
+	superLayer : check_container
+check_on.borderRadius = check_on.width/2
+check_on.originX = 0.5
+check_on.originY = 0.5
+check_on.scale = 0
+check_on.center()
+
+chline_short = new Layer
+	width : 20, height : 8
+	backgroundColor : "rgba(255,255,255,1)"
+	rotationZ : 45
+	superLayer : check_on
+chline_short.borderRadius = chline_short.width/2
+chline_short.originX = 0
+chline_short.originY = 0
+chline_short.width = 0
+
+chline_long = new Layer
+	width : 50, height : 8
+	backgroundColor : "rgba(255,255,255,1)"
+	rotationZ : -45
+	superLayer : check_on
+chline_long.borderRadius = chline_long.width/2
+chline_long.originX = 0
+chline_long.originY = 0
+chline_long.width = 0
+	
+chline_short.centerX(28)
+chline_short.centerY(0)
+
+chline_long.centerX(41)
+chline_long.centerY(19)
+
+check_container.clip = false
+
+chline_short.states.add
+	second : { width : 30 }
+
+chline_long.states.add
+	second : { width : 50}
 
 	
+check_off.on Events.Click,(events, layer) ->
+	check_on.visible = true
+	check_on.animate
+		properties :
+			scale : 1
+		curve : "spring(100, 10, 5)"
+		time : 0.1
+	Utils.delay 0.2,->
+		chline_short.states.next()
+		Utils.delay 0.2,->
+			chline_long.states.next()
+
+
+check_on.on Events.Click, (events, layer) ->
+	check_on.animate
+		properties :
+			scale : 0
+		time : 0.1
+	chline_short.states.next()
+	chline_long.states.next()
+
 
 
 
