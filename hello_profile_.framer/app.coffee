@@ -118,7 +118,9 @@ prev_w_condtion = ""
 prev_b_condtion = ""
 
 # ##profile on/off interaction
-fav_01_01.on Events.Click,(event, layer) ->
+fav_01_01_on = (event, layer) ->
+	#fav_01_02 on click off
+	fav_01_02.off(Events.Click, fav_01_02_on)
 	
 	profile_you = "on"		
 	profile_me = "off"
@@ -165,9 +167,10 @@ fav_01_01.on Events.Click,(event, layer) ->
 	
 	btn_tag.visible = false
 	
+fav_01_01.on(Events.Click, fav_01_01_on)
 			
-fav_01_02.on Events.Click,(event, layer) ->
-	
+fav_01_02_on = (event, layer) ->
+	fav_01_01.off(Events.Click, fav_01_01_on)
 	profile_you = "off"		
 	profile_me = "on"
 	
@@ -212,6 +215,9 @@ fav_01_02.on Events.Click,(event, layer) ->
 	list_profile_me.visible = true
 	
 	btn_tag.visible = true
+	
+fav_01_02.on(Events.Click, fav_01_02_on)
+
 			
 # ##profile btn_prev 
 btn_prev_w = new Layer 
@@ -230,7 +236,8 @@ btn_prev_b.visible = false
 # ## btn_prev interation	
 btn_prev_w.on Events.Click,(event, layer) -> 
 	if prev_w_condtion == "profile_you_01" or prev_w_condtion == "profile_me_01"
-
+		fav_01_01.on(Events.Click, fav_01_01_on)
+		fav_01_02.on(Events.Click, fav_01_02_on)
 		profile.animate
 			properties :
 				y : Screen.height
