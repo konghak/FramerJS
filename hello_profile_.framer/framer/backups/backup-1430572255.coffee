@@ -6,7 +6,8 @@ Framer.Device.setContentScale(1, true)
 
 # ##Include module 
 # flip 모션 모듈
-flipCard = require "flipCard"
+modules_01 = require "button_ani"
+modules_02 = require "page"
 
 # 기본 애니메이션 정의
 ease_in = "cubic-bezier(0.9, 0, 0.8, 0.9)"
@@ -30,6 +31,18 @@ layer_dim = new Layer
 	width : Screen.width, height : Screen.height 
 	opacity : 0
 	backgroundColor : "rgba(0,0,0,1)"
+
+contraints = new Layer 
+	width : Screen.width, height : Screen.height
+	y : Screen.height/3
+	backgroundColor : "transparent"
+contraints.visible = false
+
+noti_container = new Layer
+	width : Screen.width, height : Screen.height
+	y : Screen.height
+	backgroundColor : "red"
+noti_container.visible = false
 	
 #popup layer 정의
 popup = new Layer
@@ -176,6 +189,8 @@ fav_01_02_on = (event, layer) ->
 	
 	prev_w_condtion = "profile_me_01"
 	
+	text_tags_me_add.visible = false
+	
 	main.animate
 		properties :
 			scale : 0.9
@@ -214,8 +229,11 @@ fav_01_02_on = (event, layer) ->
 	text_me.visible = true
 	list_profile_me.visible = true
 	
-	btn_tag.visible = true
 	
+	btn_tag.visible = true
+	btn_tag.animate
+		properties : 
+			opacity : 1
 fav_01_02.on(Events.Click, fav_01_02_on)
 
 			
@@ -232,6 +250,8 @@ prev_w_condtion = ''
 prev_b_condtion = ''
 
 btn_prev_b.visible = false
+
+
 
 # ## btn_prev interation	
 btn_prev_w.on Events.Click,(event, layer) -> 
@@ -328,7 +348,9 @@ btn_prev_w.on Events.Click,(event, layer) ->
 	else if prev_w_condtion =='list_tags_ok'
 	
 		prev_w_condtion = 'profile_me_01'
-		
+		btn_tag.animate
+			properties : 
+				opacity : 1
 		btn_tag.visible = true
 			
 		bg_profile_top_blue.animate
@@ -447,7 +469,7 @@ backLayer = new Layer
 	x:0, y:0, width:90, height:70, image:"images/btn_favori.png"
 
 # flipEffect input: (front, back, perspective, x, y, superLayer )
-flipCard.flipCard(frontLayer, backLayer, 1600, "spring(300,20,0)", 740, 52-22, profile)
+modules_01.flipCard(frontLayer, backLayer, 1600, "spring(300,20,0)", 740, 52-22, profile)
 
 		
 # ##profile btn_more interaction
@@ -484,6 +506,88 @@ btn_more.on Events.Click,(event, layer) ->
 				time : 0.2
 			Utils.delay 0.4, ->
 				popup.visible = false
+				
+	else if profile_me == "on"
+		main.animate
+			properties :
+				scale : 0.7
+		profile.animate
+			properties :
+				scale : 0.7
+		layer_dim.visible = true
+		layer_dim.animate
+			properties :
+				opacity : 0.7
+		
+		noti_container.visible = true
+		noti_container.animate
+			properties :
+				y : Screen.height/3
+		modules_02.cardtype(noti_container)
+		
+		noti_container.draggable.enabled = true
+		noti_container.draggable.horizontal = false
+
+		noti_container.draggable.constraints = contraints.frame
+		# Customize the momentum animation
+		noti_container.draggable.momentumOptions = {
+			friction: 10
+			tolerance: 0.5
+		}
+		noti_container.draggable.bounceOptions = {
+			tension: 400
+			friction: 30
+		}
+
+		noti_container.on Events.DragEnd, ->
+			if noti_container.y < Screen.height/5
+				noti_container.animate
+					properties :
+						y : 0
+					time : 0.1
+
+			else if noti_container.y > Screen.height - (Screen.height/3*2 - 200)
+				noti_container.animate
+					properties :
+						y : Screen.height
+					time : 0.2
+	
+				layer_dim.animate
+					properties :
+						opacity : 0
+				Utils.delay 0.2, ->
+					layer_dim.visible=false
+				main.animate
+					properties :
+						scale : 0.9
+				profile.animate 
+					properties :
+						scale : 1
+				noti_container.animate
+					properties :
+						y : Screen.height
+
+
+				
+		layer_dim.on Events.Click,(event, layer) ->
+			layer_dim.animate
+				properties :
+					opacity : 0
+			Utils.delay 0.2, ->
+				layer_dim.visible=false
+			main.animate
+				properties :
+					scale : 0.9
+			profile.animate 
+				properties :
+					scale : 1
+			noti_container.animate
+				properties :
+					y : Screen.height
+
+
+
+# print modules_02.cardtype()
 
 
 # ##profile btn_tag interaction
@@ -493,8 +597,11 @@ btn_tag = new Layer
 
 
 btn_tag.on Events.Click, (event, layer) ->
-	
-	btn_tag.visible = false
+	btn_tag.animate
+		properties : 
+			opacity : 0
+	Utils.delay 0.2, ->
+		btn_tag.visible = false
 	
 	prev_w_condtion = 'list_tags_ok'
 	
@@ -545,6 +652,8 @@ btn_tag.on Events.Click, (event, layer) ->
 		keyboard.animate
 			properties :
 				y : Screen.height - keyboard.height
+	list_tags.on Events.Click, (event, layer) ->
+		text_tags_me_add.visible = true
 
 # ##profile btn_confirm interaction
 btn_confirm = new Layer 
@@ -829,43 +938,3 @@ top_bg_blue = new Layer
 	
 
 	
-
-
-
-
-
-
-					
-	
-					
-
-
-
-		
-	
-
-
-	
-
-			
-
-
-
-		
-			
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
