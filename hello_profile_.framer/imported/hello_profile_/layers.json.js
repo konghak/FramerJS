@@ -219,6 +219,55 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "children" : [
           {
             "maskFrame" : null,
+            "id" : "BE7249C6-3B90-4A15-8F48-7C4A0E45033C",
+            "visible" : false,
+            "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "5C0A4621-0786-4C7E-AF9E-22B2A16EC0F9",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-btn_text_delete-5C0A4621-0786-4C7E-AF9E-22B2A16EC0F9.png",
+                  "frame" : {
+                    "y" : 27,
+                    "x" : 884,
+                    "width" : 260,
+                    "height" : 260
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : 27,
+                  "x" : 884,
+                  "width" : 260,
+                  "height" : 260
+                },
+                "name" : "btn_text_delete"
+              }
+            ],
+            "image" : {
+              "path" : "images\/Layer-top_bg_blue-BE7249C6-3B90-4A15-8F48-7C4A0E45033C.png",
+              "frame" : {
+                "y" : -28,
+                "x" : -100,
+                "width" : 1280,
+                "height" : 371
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : -28,
+              "x" : -100,
+              "width" : 1280,
+              "height" : 371
+            },
+            "name" : "top_bg_blue"
+          },
+          {
+            "maskFrame" : null,
             "id" : "03D67D83-A5F2-4234-827D-3EB9C2E08321",
             "visible" : true,
             "children" : [
@@ -1465,14 +1514,38 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "id" : "67891C08-63FB-431D-AACB-482E4F7BA66E",
                 "visible" : true,
                 "children" : [
+                  {
+                    "maskFrame" : null,
+                    "id" : "B040BBE3-6756-4EDB-A5B3-CCA5CD4A6491",
+                    "visible" : true,
+                    "children" : [
 
+                    ],
+                    "image" : {
+                      "path" : "images\/Layer-text_tags_me_add-B040BBE3-6756-4EDB-A5B3-CCA5CD4A6491.png",
+                      "frame" : {
+                        "y" : 2393,
+                        "x" : 404,
+                        "width" : 180,
+                        "height" : 47
+                      }
+                    },
+                    "imageType" : "png",
+                    "layerFrame" : {
+                      "y" : 2393,
+                      "x" : 404,
+                      "width" : 180,
+                      "height" : 47
+                    },
+                    "name" : "text_tags_me_add"
+                  }
                 ],
                 "image" : {
                   "path" : "images\/Layer-text_tags_me-67891C08-63FB-431D-AACB-482E4F7BA66E.png",
                   "frame" : {
                     "y" : 2393,
                     "x" : 191,
-                    "width" : 207,
+                    "width" : 393,
                     "height" : 47
                   }
                 },
@@ -1480,7 +1553,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "layerFrame" : {
                   "y" : 2393,
                   "x" : 191,
-                  "width" : 207,
+                  "width" : 393,
                   "height" : 47
                 },
                 "name" : "text_tags_me"
@@ -1492,7 +1565,7 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "layerFrame" : {
               "y" : 2307,
               "x" : 191,
-              "width" : 272,
+              "width" : 393,
               "height" : 133
             },
             "name" : "text_me"
