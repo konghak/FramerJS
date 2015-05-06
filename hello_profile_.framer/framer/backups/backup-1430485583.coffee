@@ -229,6 +229,7 @@ fav_01_02_on = (event, layer) ->
 	text_me.visible = true
 	list_profile_me.visible = true
 	
+	btn_filedadd_ok.visible = false
 	
 	btn_tag.visible = true
 	btn_tag.animate
@@ -245,6 +246,12 @@ btn_prev_b = new Layer
 	x:50, y:52, width:90, height:70, image:"images/btn_prev_b.png"
 	superLayer : profile
 	opacity : 0
+btn_prev_search = new Layer 
+	x:50, y:52, width:90, height:70, image:"images/btn_prev_w.png"
+	superLayer : top_bg_blue
+
+	
+
 	
 prev_w_condtion = ''
 prev_b_condtion = ''
@@ -345,6 +352,8 @@ btn_prev_w.on Events.Click,(event, layer) ->
 						
 		keyboard.y = Screen.height
 		
+		btn_filedadd_ok.visible = false	
+		
 	else if prev_w_condtion =='list_tags_ok'
 	
 		prev_w_condtion = 'profile_me_01'
@@ -364,8 +373,8 @@ btn_prev_w.on Events.Click,(event, layer) ->
 		list_tags.animate
 			properties :
 				y : Screen.height
-				
-		list_tags.visible = false
+		Utils.delay 0.4, ->
+			list_tags.visible = false
 	
 		# profile photo
 		img_profile_me.originX = 0
@@ -613,7 +622,9 @@ btn_tag.on Events.Click, (event, layer) ->
 		properties :
 			y : Screen.height
 	
-	Utils.delay 0.05, ->	
+	
+	Utils.delay 0.05, ->
+
 		list_tags.visible = true
 		list_tags.animate
 			properties :
@@ -654,6 +665,7 @@ btn_tag.on Events.Click, (event, layer) ->
 				y : Screen.height - keyboard.height
 	list_tags.on Events.Click, (event, layer) ->
 		text_tags_me_add.visible = true
+		btn_filedadd_ok.visible = true
 
 # ##profile btn_confirm interaction
 btn_confirm = new Layer 
@@ -928,13 +940,24 @@ for i in [0..3]
 					popup.visible = false
 					popup.opacity = 0
 					popup.y = 920
-					
+print top_bg_blue
 					
 # ##search on/off interaction
-top_bg_blue = new Layer
-	width : Screen.width, height : 0
-	y : status_bar.height
-	backgroundColor : "rgba(73,181,255,1)"
+btn_search.on Events.Click, (event, layer) ->
+	top_bg_blue.animate
+		properties :
+			y : status_bar.height
+	list_search_first.animate
+		properties :
+			y : 0
+	keyboard.animate
+		properties :
+			y : Screen.height - keyboard.height
+	
+# top_bg_blue = new Layer
+# 	width : Screen.width, height : 0
+# 	y : status_bar.height
+# 	backgroundColor : "rgba(73,181,255,1)"
 	
 
 	

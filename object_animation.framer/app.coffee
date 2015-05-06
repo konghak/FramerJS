@@ -5,7 +5,7 @@ modules_01 = require "button_ani"
 
 Framer.Defaults.Animation =
 	curve : ease_in_out
-	time : 0.4
+	time : 0.3
 
 BG = new BackgroundLayer
 	backgroundColor : "rgba(255,255,255,1)"
@@ -161,7 +161,7 @@ tagplus_container = new Layer
 	y : check_container.maxY + 100
 	width : 100, height : 100
 	backgroundColor : "transparent"
-tagplus_container.centerX(0)
+tagplus_container.centerX(-70)
 
 tagplus_text = new Layer
 	y : tagplus_container.maxY+15
@@ -277,6 +277,118 @@ tagplus_on.on Events.Click, (events, layer) ->
 	tagchline_short.states.next()
 	tagchline_long.states.next()
 	
+# tag_02 plus/min ------------------------------------------------------#
+tagplus_02_container = new Layer
+	y : check_container.maxY + 100
+	width : 100, height : 100
+	backgroundColor : "transparent"
+tagplus_02_container.centerX(70)
+
+tagplus_02_off = new Layer
+	width : 100, height : 100
+	backgroundColor : "rgba(73,181,255,1)"
+	superLayer : tagplus_02_container
+tagplus_02_off.borderRadius = check_off.width/2
+
+tagplus_02_off_in = new Layer
+	width : tagplus_02_off.width-6, height : tagplus_02_off.height-6
+	backgroundColor : "rgba(255,255,255,1)"
+	superLayer : tagplus_02_off
+tagplus_02_off_in.borderRadius = tagplus_02_off_in.width/2
+tagplus_02_off_in.center()
+
+plline_02_ver = new Layer
+	width : 50, height : 6
+	backgroundColor : "rgba(73,181,255,1)"
+	rotationZ : 0
+	superLayer : tagplus_02_off
+plline_02_ver.borderRadius = plline_02_ver.width/2
+plline_02_ver.center()
+
+plline_02_hor = new Layer
+	width : 50, height : 6
+	backgroundColor : "rgba(73,181,255,1)"
+	rotationZ : 90
+	superLayer : tagplus_02_off
+plline_02_hor.borderRadius = plline_02_hor.width/2
+plline_02_hor.center()
+
+tagplus_02_on = new Layer
+	width : 100, height : 100
+	backgroundColor : "transparent"
+	superLayer : tagplus_02_container
+tagplus_02_on.borderRadius = tagplus_02_on.width/2
+
+tagchline_02_short = new Layer
+	width : 20, height : 8
+	backgroundColor : "rgba(255,255,255,1)"
+	rotationZ : 45
+	superLayer : tagplus_02_on
+tagchline_02_short.borderRadius = tagchline_02_short.width/2
+tagchline_02_short.originX = 0
+tagchline_02_short.originY = 0
+tagchline_02_short.width = 0
+
+tagchline_02_long = new Layer
+	width : 50, height : 8
+	backgroundColor : "rgba(255,255,255,1)"
+	rotationZ : -45
+	superLayer : tagplus_02_on
+tagchline_02_long.borderRadius = tagchline_02_long.width/2
+tagchline_02_long.originX = 0
+tagchline_02_long.originY = 0
+tagchline_02_long.width = 0
+	
+tagchline_02_short.centerX(28)
+tagchline_02_short.centerY(0)
+
+tagchline_02_long.centerX(41)
+tagchline_02_long.centerY(19)
+
+tagplus_02_container.clip = false
+
+tagplus_02_off.states.add
+	second : { rotationZ : 180 }
+
+tagplus_02_off_in.states.add
+	second : { scale : 0 }
+	
+tagchline_02_short.states.add
+	second : { width : 30 }
+
+tagchline_02_long.states.add
+	second : { width : 50}
+
+tagplus_02_condition = -1
+tagplus_02_off.on Events.Click,(events, layer) ->
+	tagplus_02_condition = -tagplus_02_condition
+	if tagplus_02_condition == 1
+		tagchline_02_short.visible = true
+		tagchline_02_long.visible = true
+		tagplus_02_off.states.next()
+		tagplus_02_off_in.states.next()
+		Utils.delay 0.15,->
+			tagchline_02_short.states.next()
+			Utils.delay 0.25,->
+				tagchline_02_long.states.next()
+	else if tagplus_02_condition == -1
+		tagchline_02_short.visible = false
+		tagchline_02_long.visible = false
+		tagplus_02_off.states.next()
+		tagplus_02_off_in.states.next()
+		tagchline_02_short.states.next()
+		tagchline_02_long.states.next()
+
+# text
+tagplus_02_text = new Layer
+	y : tagplus_02_container.maxY+15
+	backgroundColor : "transparent"
+
+tagplus_02_text.centerX(0)
+tagplus_02_text.html = "tag_add"
+tagplus_02_text.style.color = "rgba(0,0,0,0.87)"
+tagplus_02_text.style.textAlign = "center"
+
 	
 # radio on/off ------------------------------------------------------#
 radio_container = new Layer
@@ -452,14 +564,8 @@ favori_off = new Layer
 	image : "images/btn_favori_off.png"
 	scale : 0.5
  
-# favori_on = new Layer
-# 	width : 100, height : 100
-# 	backgroundColor : "transparent"
-# 	image : "images/btn_favori_on.png"
-# 	superLayer : numadd_off
-# 	scale : 0.5
 
-modules_01.flipCard(numadd_off, favori_off ,1600, "spring(250,50,10)", 0, 0, numadd_container)
+modules_01.flipCard(numadd_off, favori_off ,1600, "spring(300,40,10)", 0, 0, numadd_container)
 
 numadd_text = new Layer
 	y : numadd_container.maxY+15
@@ -497,18 +603,28 @@ favori_on = new Layer
 	backgroundColor : "transparent"
 	image : "images/btn_favori_on.png"
 	superLayer : favori
+	opacity : 0
 	scale : 0
 favori_on.visible = false
-	
-favori_on.states.add
-	second : { scale : 0.5}
-favori_on.states.animationOptions = 
-    curve: "spring(160, 12, 5)"
-    time : 0.5
- 
+
+favori_count = 1
 favori_container.on Events.Click, (events, layer) ->
 	favori_on.visible = true
-	favori_on.states.next()
+	favori_count = -favori_count
+	if favori_count == -1
+		favori_on.animate
+			properties : 
+				opacity : 1
+				scale : 0.5
+			curve : "spring(340,15,10)"
+			time : 0.4
+	else if favori_count == 1
+		favori_on.animate
+			properties : 
+				opacity : 0
+				scale : 0		
+			time : 0.2
+
 
 
 

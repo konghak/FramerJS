@@ -220,8 +220,58 @@ window.__imported__["hello_profile_/layers.json.js"] = [
           {
             "maskFrame" : null,
             "id" : "BE7249C6-3B90-4A15-8F48-7C4A0E45033C",
-            "visible" : false,
+            "visible" : true,
             "children" : [
+              {
+                "maskFrame" : null,
+                "id" : "42806F31-3F6C-4BBF-BDB3-F73D13D8B5C5",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-text_search-42806F31-3F6C-4BBF-BDB3-F73D13D8B5C5.png",
+                  "frame" : {
+                    "y" : -35,
+                    "x" : 142,
+                    "width" : 244,
+                    "height" : 45
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : -35,
+                  "x" : 142,
+                  "width" : 244,
+                  "height" : 45
+                },
+                "name" : "text_search"
+              },
+              {
+                "maskFrame" : null,
+                "id" : "0234C0E9-A7AF-42FC-B1CE-0FE0F99263AF",
+                "visible" : true,
+                "children" : [
+
+                ],
+                "image" : {
+                  "path" : "images\/Layer-text_basic-0234C0E9-A7AF-42FC-B1CE-0FE0F99263AF.png",
+                  "frame" : {
+                    "y" : -35,
+                    "x" : 144,
+                    "width" : 349,
+                    "height" : 51
+                  }
+                },
+                "imageType" : "png",
+                "layerFrame" : {
+                  "y" : -35,
+                  "x" : 144,
+                  "width" : 349,
+                  "height" : 51
+                },
+                "name" : "text_basic"
+              },
               {
                 "maskFrame" : null,
                 "id" : "5C0A4621-0786-4C7E-AF9E-22B2A16EC0F9",
@@ -232,18 +282,18 @@ window.__imported__["hello_profile_/layers.json.js"] = [
                 "image" : {
                   "path" : "images\/Layer-btn_text_delete-5C0A4621-0786-4C7E-AF9E-22B2A16EC0F9.png",
                   "frame" : {
-                    "y" : 27,
-                    "x" : 884,
-                    "width" : 260,
-                    "height" : 260
+                    "y" : -46,
+                    "x" : 983,
+                    "width" : 62,
+                    "height" : 62
                   }
                 },
                 "imageType" : "png",
                 "layerFrame" : {
-                  "y" : 27,
-                  "x" : 884,
-                  "width" : 260,
-                  "height" : 260
+                  "y" : -46,
+                  "x" : 983,
+                  "width" : 62,
+                  "height" : 62
                 },
                 "name" : "btn_text_delete"
               }
@@ -251,20 +301,75 @@ window.__imported__["hello_profile_/layers.json.js"] = [
             "image" : {
               "path" : "images\/Layer-top_bg_blue-BE7249C6-3B90-4A15-8F48-7C4A0E45033C.png",
               "frame" : {
-                "y" : -28,
-                "x" : -100,
-                "width" : 1280,
-                "height" : 371
+                "y" : -100,
+                "x" : 0,
+                "width" : 1080,
+                "height" : 171
               }
             },
             "imageType" : "png",
             "layerFrame" : {
-              "y" : -28,
-              "x" : -100,
-              "width" : 1280,
-              "height" : 371
+              "y" : -100,
+              "x" : 0,
+              "width" : 1080,
+              "height" : 171
             },
             "name" : "top_bg_blue"
+          },
+          {
+            "maskFrame" : {
+              "y" : 2278,
+              "x" : -36,
+              "width" : 327,
+              "height" : 327
+            },
+            "id" : "1A37A777-8246-491A-B25E-659BF8352CBA",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-list_search_result-1A37A777-8246-491A-B25E-659BF8352CBA.png",
+              "frame" : {
+                "y" : 1921,
+                "x" : 1,
+                "width" : 1083,
+                "height" : 1676
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 1921,
+              "x" : 1,
+              "width" : 1083,
+              "height" : 1676
+            },
+            "name" : "list_search_result"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "7BE65308-A94D-434B-932C-D1432B23F996",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-list_search_first-7BE65308-A94D-434B-932C-D1432B23F996.png",
+              "frame" : {
+                "y" : 1921,
+                "x" : 1,
+                "width" : 1080,
+                "height" : 1676
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 1921,
+              "x" : 1,
+              "width" : 1080,
+              "height" : 1676
+            },
+            "name" : "list_search_first"
           },
           {
             "maskFrame" : null,
@@ -446,10 +551,10 @@ window.__imported__["hello_profile_/layers.json.js"] = [
         "visible" : true,
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 71,
+          "y" : -100,
           "x" : -3,
-          "width" : 1084,
-          "height" : 304
+          "width" : 1087,
+          "height" : 3697
         },
         "name" : "top_area"
       },
@@ -1918,6 +2023,31 @@ window.__imported__["hello_profile_/layers.json.js"] = [
               "height" : 495
             },
             "name" : "tag_change"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "C48CC1E0-6804-4D9E-9A9A-6A8E58F54463",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-btn_filedadd_ok-C48CC1E0-6804-4D9E-9A9A-6A8E58F54463.png",
+              "frame" : {
+                "y" : 4178,
+                "x" : 949,
+                "width" : 75,
+                "height" : 76
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 4178,
+              "x" : 949,
+              "width" : 75,
+              "height" : 76
+            },
+            "name" : "btn_filedadd_ok"
           },
           {
             "maskFrame" : null,
