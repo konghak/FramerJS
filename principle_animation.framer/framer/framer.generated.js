@@ -16,7 +16,7 @@ window.Framer.Defaults.DeviceComponent = {
 };
 
 window.FramerStudioInfo = {
-  "deviceImagesUrl" : "\/_server\/resources\/DeviceImages",
+  "deviceImagesUrl" : "file:\/\/\/Applications\/Framer%20Studio.app\/Contents\/Resources\/DeviceImages\/",
   "documentTitle" : "principle_animation.framer"
 };
 
@@ -502,7 +502,7 @@ exports.HighlightComponent = (function() {
 
 
 },{}],5:[function(require,module,exports){
-var BUILDS, EventEmitter, Runtime, bridge, parseUrl,
+var BUILDS, EventEmitter, Runtime, TRANSFORM_REGEX, bridge,
   bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -511,24 +511,20 @@ EventEmitter = require("eventemitter3");
 
 bridge = require("./Bridge").bridge;
 
-BUILDS = 0;
+TRANSFORM_REGEX = /(([\w.]+) += +new [\w]*Layer[^;]*;)/g;
 
-parseUrl = function(url) {
-  var parser;
-  parser = document.createElement("a");
-  parser.href = url;
-  return parser;
-};
+BUILDS = 0;
 
 Runtime = (function(superClass) {
   extend(Runtime, superClass);
 
   function Runtime() {
+    this._windowErrorHandler = bind(this._windowErrorHandler, this);
     this._errorHandler = bind(this._errorHandler, this);
-    this.setup();
+    this.init();
   }
 
-  Runtime.prototype.setup = function() {
+  Runtime.prototype.init = function() {
     var properties;
     if (typeof Framer !== "undefined" && Framer !== null ? Framer.Device : void 0) {
       properties = ["deviceScale", "contentScale", "deviceType", "keyboard", "orientation", "fullScreen"];
@@ -561,7 +557,8 @@ Runtime = (function(superClass) {
   };
 
   Runtime.prototype.uncoffee = function(code) {
-    var e, error, result;
+    var CoffeeScript, e, error, result;
+    CoffeeScript = (typeof window !== "undefined" && window !== null ? window.CoffeeScript : void 0) || this.CoffeeScript;
     try {
       result = CoffeeScript.compile(code, {
         sourceMap: true,
@@ -581,26 +578,31 @@ Runtime = (function(superClass) {
     return result;
   };
 
-  Runtime.prototype._errorHandler = function(runtimeError) {
-    var error, errorFromCompiledCoffeeScript, fileName;
-    errorFromCompiledCoffeeScript = runtimeError.filename === window.location.href;
-    if (errorFromCompiledCoffeeScript) {
-      error = new Error(runtimeError.message);
-      error.lineNumber = this._lookupLine(runtimeError.lineno);
-    } else {
-      fileName = _.last(parseUrl(runtimeError.filename).pathname.split("/"));
-      error = new Error("[" + fileName + "] " + runtimeError.message);
-      error.lineNumber = -1;
-    }
+  Runtime.prototype.transform = function(code) {
+    return code;
+  };
+
+  Runtime.prototype._errorHandler = function(error) {
+    error.lineNumber = this._lookupLine(error.lineno);
     return bridge.sendError(error);
   };
 
+  Runtime.prototype._windowErrorHandler = function(message, url, line, col) {
+    if (_.endsWith(url, ".temp.html")) {
+      console.error("Framer script error line " + (this._lookupLine(line)) + ": " + message);
+      return true;
+    }
+    return false;
+  };
+
   Runtime.prototype._errorHandlerSetup = function() {
-    return window.addEventListener("error", this._errorHandler);
+    window.addEventListener("error", this._errorHandler);
+    return window.onerror = this._windowErrorHandler;
   };
 
   Runtime.prototype._errorHandlerRemove = function() {
-    return window.removeEventListener("error", this._errorHandler);
+    window.removeEventListener("error", this._errorHandler);
+    return window.onerror = null;
   };
 
   Runtime.prototype._lookupLine = function(lineNumber) {
