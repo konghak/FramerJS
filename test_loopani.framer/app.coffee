@@ -4,6 +4,9 @@ bg = new BackgroundLayer
 	
 case_01 = new Layer
 	width : 60, height : 60
+	backgroundColor : "rgba(123,223,3,1)"
+	clip : false
+case_01.borderRadius = case_01.width/2
 case_01.center()
 
 radiusLength = 140 #중심축에서 떨어진 원의 거리
@@ -22,14 +25,16 @@ for i in [1..numCircles]
 	adjSide = Utils.round(adjSide, 0)
 	oppSide = Utils.round(oppSide, 0)
 
+	
 	circle = new Layer
-		x : adjSide+case_01.midX+radius/2
-		y : oppSide+case_01.midY+radius/2
+		x : adjSide+case_01.width/2-radius/2
+		y : oppSide+case_01.width/2-radius/2
 		backgroundColor : "#000000"
 		height : radius, width : radius
 		opacity: 0.7
 		borderRadius: radius/2
 		name : "circle_" + i
+		superLayer : case_01
 
 
 	circle.states.add({
